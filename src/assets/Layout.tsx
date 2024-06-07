@@ -1,5 +1,5 @@
-import UserInputFields from './UserInputsFields/UserInputFields';
+import UserForm from './UserForm/UserForm';
 
 export default function Layout() {
-  return <UserInputFields />;
+  return <UserForm />;
 }
