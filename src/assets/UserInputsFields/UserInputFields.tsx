@@ -29,7 +29,7 @@ export default function UserInputFields() {
           <UserSelect>Type</UserSelect>
         </Grid>
         <Grid item xs={6}>
-          <UserSelect>Time</UserSelect>
+          <UserSelect values={['1m', '2m', '5m']}>Time</UserSelect>
         </Grid>
       </Grid>
     </Box>
