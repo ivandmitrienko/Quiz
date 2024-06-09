@@ -1,8 +1,8 @@
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
-import FormButton from './FormButton';
+import { PropsChildren } from '../types/types';
 
-export default function FormButtonGroup() {
+export default function UserButtonGroup({ children }: PropsChildren) {
   return (
     <Box
       sx={{
@@ -15,8 +15,7 @@ export default function FormButtonGroup() {
       }}
     >
       <ButtonGroup variant='outlined' aria-label='Basic button group'>
-        <FormButton>Start quiz</FormButton>
-        <FormButton>See my stats</FormButton>
+        {children}
       </ButtonGroup>
     </Box>
   );

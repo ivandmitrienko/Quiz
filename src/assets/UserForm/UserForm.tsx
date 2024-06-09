@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 import { Grid, TextField } from '@mui/material';
 import Box from '@mui/material/Box';
 import UserSelect from './FormSelect';
-import FormButtonGroup from './FormButtonGroup';
+import UserButtonGroup from '../UserButton/ButtonGroup';
 import numberQuestions from '../utilies/numberQuestions';
+import UserButton from '../UserButton/Button';
 
 export default function UserInputFields() {
   const [number, setNumberQuestions] = useState<number>();
@@ -55,7 +56,10 @@ export default function UserInputFields() {
           <UserSelect values={['1m', '2m', '5m']}>Time</UserSelect>
         </Grid>
       </Grid>
-      <FormButtonGroup />
+      <UserButtonGroup>
+        <UserButton>Start quiz</UserButton>
+        <UserButton>See my stats</UserButton>
+      </UserButtonGroup>
     </Box>
   );
 }
