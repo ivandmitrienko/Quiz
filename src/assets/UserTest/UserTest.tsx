@@ -1,7 +1,7 @@
 import { Box, Container } from '@mui/material';
 import CircularProgressChildren from './CircularProgressChildren';
-import UserButtonGroup from '../UserButton/ButtonGroup';
-import UserButton from '../UserButton/Button';
+import UserButtonGroup from '../UserButtons/ButtonGroup';
+import UserButton from '../UserButtons/Button';
 import UserTimer from './UserTimer';
 
 export default function UserTest() {

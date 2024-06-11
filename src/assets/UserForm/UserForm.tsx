@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import { Grid, TextField } from '@mui/material';
 import Box from '@mui/material/Box';
 import UserSelect from './FormSelect';
-import UserButtonGroup from '../UserButton/ButtonGroup';
+import UserButtonGroup from '../UserButtons/ButtonGroup';
 import numberQuestions from '../utilies/numberQuestions';
-import UserButton from '../UserButton/Button';
+import UserButton from '../UserButtons/Button';
 
 export default function UserInputFields() {
   const [number, setNumberQuestions] = useState<number>();

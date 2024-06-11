@@ -14,9 +14,7 @@ export default function UserButtonGroup({ children }: PropsChildren) {
         },
       }}
     >
-      <ButtonGroup variant='outlined' aria-label='Basic button group'>
-        {children}
-      </ButtonGroup>
+      <ButtonGroup aria-label='Basic button group'>{children}</ButtonGroup>
     </Box>
   );
 }
