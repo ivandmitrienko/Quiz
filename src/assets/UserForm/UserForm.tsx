@@ -7,7 +7,7 @@ import UserButtonGroup from '../UserButtons/ButtonGroup';
 import numberQuestions from '../utilies/numberQuestions';
 import UserButton from '../UserButtons/Button';
 
-export default function UserInputFields() {
+export default function UserForm() {
   const [number, setNumberQuestions] = useState<number>();
   const [nameError, setNameError] = useState(false);
 
