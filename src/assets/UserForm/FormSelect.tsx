@@ -5,20 +5,17 @@ import {
   Select,
   SelectChangeEvent,
 } from '@mui/material';
-import { useState } from 'react';
 
 interface ISelect {
   children: string;
   values?: string[];
 }
 
-export default function UserSelect({ children, values }: ISelect) {
-  const [value, setValue] = useState('');
-
-  const handleChange = (event: SelectChangeEvent) => {
-    setValue(event.target.value as string);
-  };
-
+export default function UserSelect({
+  children,
+  values,
+  handleSelectChange,
+}: ISelect) {
   return (
     <FormControl fullWidth>
       <InputLabel id='demo-simple-select-label'>{children}</InputLabel>
@@ -26,10 +23,16 @@ export default function UserSelect({ children, values }: ISelect) {
         labelId='demo-simple-select-label'
         id='demo-simple-select'
         value={value}
-        label='Category'
-        onChange={handleChange}
+        label={children}
+        onChange={handleSelectChange(e, setValue)}
+        displayEmpty
       >
-        {values && values.map((e) => <MenuItem value={e}>{e}</MenuItem>)}
+        {values &&
+          values.map((e) => (
+            <MenuItem key={e} value={e}>
+              {e}
+            </MenuItem>
+          ))}
       </Select>
     </FormControl>
   );

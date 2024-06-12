@@ -1,10 +1,20 @@
+import { useState } from 'react';
+
 import { Box, Container } from '@mui/material';
-import CircularProgressChildren from './CircularProgressChildren';
-import UserButtonGroup from '../UserButtons/ButtonGroup';
-import UserButton from '../UserButtons/Button';
+
+import CircularProgressChildren from './UserProgress';
+import UserButtonGroup from '../UserButtons/UserButtonGroup';
+import UserButton from '../UserButtons/UserButton';
 import UserTimer from './UserTimer';
+import UserTestModal from './UserTestModal';
 
 export default function UserTest() {
+  const [modal, setModal] = useState(false);
+
+  const handleModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <Container>
       <CircularProgressChildren />
@@ -25,9 +35,10 @@ export default function UserTest() {
       >
         <UserTimer />
         <UserButtonGroup>
-          <UserButton>End quiz</UserButton>
+          <UserButton handleClick={handleModal}>End quiz</UserButton>
         </UserButtonGroup>
       </Box>
+      <UserTestModal modal={modal} handleClick={handleModal} />
     </Container>
   );
 }

@@ -1,7 +1,9 @@
 import { Box, Container, Grid } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-import UserButton from '../UserButtons/Button';
+
+import UserButton from '../UserButtons/UserButton';
+// import { BASE_URL } from '../UserLocalRouter/routes';
 
 export default function UserResult() {
   const Item = styled(Paper)(({ theme }) => ({
@@ -56,8 +58,8 @@ export default function UserResult() {
           margin: '20px 20px',
         }}
       >
-        <UserButton>Restart</UserButton>
-        <UserButton>Choose another quiz</UserButton>
+        <UserButton link={'/test'}>Restart</UserButton>
+        <UserButton link={'/'}>Choose another quiz</UserButton>
       </Box>
     </Container>
   );
