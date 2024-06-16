@@ -43,7 +43,7 @@ export default function UserForm() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Typography variant='h4' sx={{ textAlign: 'center' }} gutterBottom>
+      <Typography variant='h4' sx={{ textAlign: 'center' }} mb={5} gutterBottom>
         Quiz Configuration
       </Typography>
       <Grid

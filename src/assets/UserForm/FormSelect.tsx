@@ -1,23 +1,6 @@
-import {
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-  SelectChangeEvent,
-} from '@mui/material';
-import { ChangeEvent } from 'react';
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
-interface ISelect {
-  children: string;
-  values: string[];
-  name: string;
-  value: string;
-  handleSelectChange: (
-    e:
-      | ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-      | SelectChangeEvent<string>,
-  ) => void;
-}
+import { ISelect } from '../types/types';
 
 export default function UserSelect({
   children,
@@ -36,7 +19,6 @@ export default function UserSelect({
         value={value}
         label={children}
         onChange={handleSelectChange}
-        displayEmpty
       >
         {values &&
           values.map((e) => (

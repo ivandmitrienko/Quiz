@@ -1,3 +1,6 @@
+import { SelectChangeEvent } from '@mui/material';
+import { ChangeEvent } from 'react';
+
 export type PropsChildren = {
   children: string | JSX.Element | JSX.Element[];
 };
@@ -19,4 +22,16 @@ export interface IQuizConfigState {
   difficulty: string;
   type: string;
   time: string;
+}
+
+export interface ISelect {
+  children: string;
+  values: string[];
+  name: string;
+  value: string;
+  handleSelectChange: (
+    e:
+      | ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+      | SelectChangeEvent<string>,
+  ) => void;
 }
