@@ -35,3 +35,11 @@ export interface ISelect {
       | SelectChangeEvent<string>,
   ) => void;
 }
+
+export interface Question {
+  id: number;
+  question: string;
+  type: string;
+  correct_answer: string;
+  incorrect_answers: string[];
+}

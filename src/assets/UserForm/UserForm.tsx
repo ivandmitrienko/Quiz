@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 
 import UserButtonGroup from '../UserButtons/UserButtonGroup';
 import numberQuestions from '../utilies/numberQuestions';
-import UserButton from '../UserButtons/UserButton';
+import UserButton from '../UserButtons/TypeOfButton';
 import { IQuizConfigState } from '../types/types';
 import UserSelect from './FormSelect';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';

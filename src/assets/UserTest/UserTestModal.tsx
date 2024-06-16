@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, Modal } from '@mui/material';
 
-import UserButton from '../UserButtons/UserButton';
+import UserButton from '../UserButtons/TypeOfButton';
 
 import { IModal } from '../types/types';
 

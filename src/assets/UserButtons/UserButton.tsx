@@ -1,33 +1,17 @@
-import Button from '@mui/material/Button';
-
+import { Button } from '@mui/material';
 import { IBotton } from '../types/types';
 
-import { Link } from 'react-router-dom';
+type UserButton = Pick<IBotton, 'children' | 'handleClick'>;
 
-export default function UserButton({ children, handleClick, link }: IBotton) {
+export default function UserButton({ children, handleClick }: UserButton) {
   return (
-    <>
-      {link ? (
-        <Link to={link}>
-          <Button
-            onClick={handleClick}
-            variant='contained'
-            color='primary'
-            sx={{ fontWeight: '900' }}
-          >
-            {children}
-          </Button>
-        </Link>
-      ) : (
-        <Button
-          onClick={handleClick}
-          variant='contained'
-          color='primary'
-          sx={{ fontWeight: '900' }}
-        >
-          {children}
-        </Button>
-      )}
-    </>
+    <Button
+      onClick={handleClick}
+      variant='contained'
+      color='primary'
+      sx={{ fontWeight: '900', minWidth: '150px' }}
+    >
+      {children}
+    </Button>
   );
 }

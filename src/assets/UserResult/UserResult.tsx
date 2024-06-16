@@ -2,7 +2,7 @@ import { Box, Container, Grid } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 
-import UserButton from '../UserButtons/UserButton';
+import UserButton from '../UserButtons/TypeOfButton';
 // import { BASE_URL } from '../UserLocalRouter/routes';
 
 export default function UserResult() {
