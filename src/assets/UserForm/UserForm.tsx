@@ -1,6 +1,6 @@
 import { ChangeEvent, useState } from 'react';
 
-import { Grid, SelectChangeEvent, TextField, Typography } from '@mui/material';
+import { Grid, SelectChangeEvent, TextField } from '@mui/material';
 import Box from '@mui/material/Box';
 
 import UserButtonGroup from '../UserButtons/UserButtonGroup';
@@ -8,6 +8,7 @@ import numberQuestions from '../utilies/numberQuestions';
 import UserButton from '../UserButtons/UserButton';
 import { IQuizConfigState } from '../types/types';
 import UserSelect from './FormSelect';
+import TitleOfPage from '../TitleOfPage/TitleOfPage';
 
 export default function UserForm() {
   const [config, setConfig] = useState<IQuizConfigState>({
@@ -43,9 +44,7 @@ export default function UserForm() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Typography variant='h4' sx={{ textAlign: 'center' }} mb={5} gutterBottom>
-        Quiz Configuration
-      </Typography>
+      <TitleOfPage>Quiz Configuration</TitleOfPage>
       <Grid
         container
         sx={{ display: 'flex', justifyContent: 'center' }}
