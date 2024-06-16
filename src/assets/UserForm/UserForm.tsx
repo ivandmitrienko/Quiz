@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 
-import { Grid, SelectChangeEvent, TextField } from '@mui/material';
+import { Grid, SelectChangeEvent, TextField, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 
-// import UserSelect from './FormSelect';
 import UserButtonGroup from '../UserButtons/UserButtonGroup';
 import numberQuestions from '../utilies/numberQuestions';
 import UserButton from '../UserButtons/UserButton';
 import { IQuizConfigState } from '../types/types';
+import UserSelect from './FormSelect';
 
 export default function UserForm() {
   const [config, setConfig] = useState<IQuizConfigState>({
@@ -18,30 +18,34 @@ export default function UserForm() {
     time: '1m',
   });
 
-  // const [nameError, setNameError] = useState<boolean>(false);
+  const [nameError, setNameError] = useState<boolean>(false);
 
   const { min, max } = numberQuestions();
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement> | SelectChangeEvent<string>,
+    e:
+      | ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+      | SelectChangeEvent<string>,
   ) => {
     const { name, value } = e.target;
+
     setConfig((prevConfig) => ({
       ...prevConfig,
-      [name]: value,
+      [name]: name === 'numberOfQuestions' ? parseInt(value, 10) : value,
     }));
-    // if (e.target.validity.valid) {
-    //   setNameError(false);
-    // } else {
-    //   setNameError(true);
-    // }
-  };
 
-  // const handleSelectChange = ({ e, selectHandle }: ISelectHandle) =>
-  //   selectHandle(e.target.value as string);
+    if (e.target instanceof HTMLInputElement && e.target.validity.valid) {
+      setNameError(false);
+    } else if (e.target instanceof HTMLInputElement) {
+      setNameError(true);
+    }
+  };
 
   return (
     <Box sx={{ width: '100%' }}>
+      <Typography variant='h4' sx={{ textAlign: 'center' }} gutterBottom>
+        Quiz Configuration
+      </Typography>
       <Grid
         container
         sx={{ display: 'flex', justifyContent: 'center' }}
@@ -51,19 +55,22 @@ export default function UserForm() {
         <Grid item xs={6}>
           <TextField
             fullWidth
-            // required
+            required
             label='number questions'
             type='number'
             inputProps={{ min, max }}
-            value={config.numberOfQuestions}
-            // error={nameError}
-            // helperText={nameError ? 'Please enter number from 5 to 15' : ''}
+            value={Number(config.numberOfQuestions)}
+            name='numberOfQuestions'
+            error={nameError}
+            helperText={nameError ? 'Please enter number from 5 to 15' : ''}
             onChange={handleChange}
           />
         </Grid>
-        {/* <Grid item xs={6}>
+        <Grid item xs={6}>
           <UserSelect
-            handleSelectChange={handleSelectChange}
+            value={config.category}
+            name='category'
+            handleSelectChange={handleChange}
             values={['general', 'sports', 'history']}
           >
             Category
@@ -71,23 +78,34 @@ export default function UserForm() {
         </Grid>
         <Grid item xs={6}>
           <UserSelect
-            handleSelectChange={handleSelectChange}
+            value={config.difficulty}
+            name='difficulty'
+            handleSelectChange={handleChange}
             values={['easy', 'medium', 'hard']}
           >
             Difficulty
           </UserSelect>
         </Grid>
         <Grid item xs={6}>
-          <UserSelect values={['multiple', 'boolean']}>Type</UserSelect>
+          <UserSelect
+            value={config.type}
+            name='type'
+            values={['multiple', 'boolean']}
+            handleSelectChange={handleChange}
+          >
+            Type
+          </UserSelect>
         </Grid>
         <Grid item xs={6}>
           <UserSelect
-            handleSelectChange={handleSelectChange(e, setTime)}
+            value={config.time}
+            name='time'
+            handleSelectChange={handleChange}
             values={['1m', '2m', '5m']}
           >
             Time
           </UserSelect>
-        </Grid> */}
+        </Grid>
       </Grid>
       <UserButtonGroup>
         <UserButton link='/test'>Start quiz</UserButton>

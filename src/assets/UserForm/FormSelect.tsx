@@ -5,16 +5,26 @@ import {
   Select,
   SelectChangeEvent,
 } from '@mui/material';
+import { ChangeEvent } from 'react';
 
 interface ISelect {
   children: string;
-  values?: string[];
+  values: string[];
+  name: string;
+  value: string;
+  handleSelectChange: (
+    e:
+      | ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+      | SelectChangeEvent<string>,
+  ) => void;
 }
 
 export default function UserSelect({
   children,
+  value,
   values,
   handleSelectChange,
+  name,
 }: ISelect) {
   return (
     <FormControl fullWidth>
@@ -22,9 +32,10 @@ export default function UserSelect({
       <Select
         labelId='demo-simple-select-label'
         id='demo-simple-select'
+        name={name}
         value={value}
         label={children}
-        onChange={handleSelectChange(e, setValue)}
+        onChange={handleSelectChange}
         displayEmpty
       >
         {values &&
