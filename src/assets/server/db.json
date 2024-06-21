@@ -1,792 +1,794 @@
-[
-    {
-        "id": 1,
-        "question": "What is the largest planet in our Solar System?",
-        "type": "multiple",
-        "correct_answer": "Jupiter",
-        "incorrect_answers": [
-            "Saturn",
-            "Earth",
-            "Mars"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 2,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
-        "type": "multiple",
-        "correct_answer": "Harper Lee",
-        "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ],
-        "category": "Literature",
-        "difficulty": "medium"
-    },
-    {
-        "id": 3,
-        "question": "Is water wet?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 4,
-        "question": "What is the chemical symbol for gold?",
-        "type": "multiple",
-        "correct_answer": "Au",
-        "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 5,
-        "question": "What is the capital of Japan?",
-        "type": "multiple",
-        "correct_answer": "Tokyo",
-        "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 6,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 7,
-        "question": "What is the speed of light?",
-        "type": "multiple",
-        "correct_answer": "299,792,458 m/s",
-        "incorrect_answers": [
-            "150,000,000 m/s",
-            "30,000,000 m/s",
-            "3,000,000 m/s"
-        ],
-        "category": "Science",
-        "difficulty": "medium"
-    },
-    {
-        "id": 8,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 9,
-        "question": "Who painted the Mona Lisa?",
-        "type": "multiple",
-        "correct_answer": "Leonardo da Vinci",
-        "incorrect_answers": [
-            "Vincent van Gogh",
-            "Pablo Picasso",
-            "Claude Monet"
-        ],
-        "category": "Art",
-        "difficulty": "medium"
-    },
-    {
-        "id": 10,
-        "question": "What is the boiling point of water?",
-        "type": "multiple",
-        "correct_answer": "100°C",
-        "incorrect_answers": [
-            "90°C",
-            "110°C",
-            "120°C"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 11,
-        "question": "What is the capital of France?",
-        "type": "multiple",
-        "correct_answer": "Paris",
-        "incorrect_answers": [
-            "Berlin",
-            "Madrid",
-            "Rome"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 12,
-        "question": "What is the chemical symbol for oxygen?",
-        "type": "multiple",
-        "correct_answer": "O",
-        "incorrect_answers": [
-            "Ox",
-            "O2",
-            "Om"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 13,
-        "question": "Is the sky blue?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 14,
-        "question": "What is the tallest mountain in the world?",
-        "type": "multiple",
-        "correct_answer": "Mount Everest",
-        "incorrect_answers": [
-            "K2",
-            "Kangchenjunga",
-            "Lhotse"
-        ],
-        "category": "Geography",
-        "difficulty": "medium"
-    },
-    {
-        "id": 15,
-        "question": "Who developed the theory of relativity?",
-        "type": "multiple",
-        "correct_answer": "Albert Einstein",
-        "incorrect_answers": [
-            "Isaac Newton",
-            "Galileo Galilei",
-            "Nikola Tesla"
-        ],
-        "category": "Science",
-        "difficulty": "medium"
-    },
-    {
-        "id": 16,
-        "question": "What is the capital of Australia?",
-        "type": "multiple",
-        "correct_answer": "Canberra",
-        "incorrect_answers": [
-            "Sydney",
-            "Melbourne",
-            "Brisbane"
-        ],
-        "category": "Geography",
-        "difficulty": "medium"
-    },
-    {
-        "id": 17,
-        "question": "What is the chemical symbol for iron?",
-        "type": "multiple",
-        "correct_answer": "Fe",
-        "incorrect_answers": [
-            "Ir",
-            "In",
-            "I"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 18,
-        "question": "Is the earth flat?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 19,
-        "question": "Who wrote '1984'?",
-        "type": "multiple",
-        "correct_answer": "George Orwell",
-        "incorrect_answers": [
-            "Aldous Huxley",
-            "Ray Bradbury",
-            "Jules Verne"
-        ],
-        "category": "Literature",
-        "difficulty": "medium"
-    },
-    {
-        "id": 20,
-        "question": "What is the chemical symbol for hydrogen?",
-        "type": "multiple",
-        "correct_answer": "H",
-        "incorrect_answers": [
-            "Hy",
-            "He",
-            "Ha"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 21,
-        "question": "What is the capital of Canada?",
-        "type": "multiple",
-        "correct_answer": "Ottawa",
-        "incorrect_answers": [
-            "Toronto",
-            "Vancouver",
-            "Montreal"
-        ],
-        "category": "Geography",
-        "difficulty": "medium"
-    },
-    {
-        "id": 22,
-        "question": "Who discovered penicillin?",
-        "type": "multiple",
-        "correct_answer": "Alexander Fleming",
-        "incorrect_answers": [
-            "Marie Curie",
-            "Louis Pasteur",
-            "Gregor Mendel"
-        ],
-        "category": "Science",
-        "difficulty": "medium"
-    },
-    {
-        "id": 23,
-        "question": "What is the largest ocean on Earth?",
-        "type": "multiple",
-        "correct_answer": "Pacific Ocean",
-        "incorrect_answers": [
-            "Atlantic Ocean",
-            "Indian Ocean",
-            "Arctic Ocean"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 24,
-        "question": "Who is known as the 'Father of Computers'?",
-        "type": "multiple",
-        "correct_answer": "Charles Babbage",
-        "incorrect_answers": [
-            "Alan Turing",
-            "John von Neumann",
-            "Bill Gates"
-        ],
-        "category": "Technology",
-        "difficulty": "medium"
-    },
-    {
-        "id": 25,
-        "question": "What is the largest mammal in the world?",
-        "type": "multiple",
-        "correct_answer": "Blue Whale",
-        "incorrect_answers": [
-            "Elephant",
-            "Giraffe",
-            "Hippopotamus"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 26,
-        "question": "What is the chemical symbol for sodium?",
-        "type": "multiple",
-        "correct_answer": "Na",
-        "incorrect_answers": [
-            "So",
-            "Sa",
-            "S"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 27,
-        "question": "Who painted the Sistine Chapel ceiling?",
-        "type": "multiple",
-        "correct_answer": "Michelangelo",
-        "incorrect_answers": [
-            "Leonardo da Vinci",
-            "Raphael",
-            "Donatello"
-        ],
-        "category": "Art",
-        "difficulty": "medium"
-    },
-    {
-        "id": 28,
-        "question": "What is the smallest country in the world?",
-        "type": "multiple",
-        "correct_answer": "Vatican City",
-        "incorrect_answers": [
-            "Monaco",
-            "Nauru",
-            "San Marino"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 29,
-        "question": "What is the chemical symbol for silver?",
-        "type": "multiple",
-        "correct_answer": "Ag",
-        "incorrect_answers": [
-            "Si",
-            "Au",
-            "Pb"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 30,
-        "question": "Is the earth the center of the solar system?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 31,
-        "question": "What is the main ingredient in traditional Japanese miso soup?",
-        "type": "multiple",
-        "correct_answer": "Miso paste",
-        "incorrect_answers": [
-            "Soy sauce",
-            "Tofu",
-            "Seaweed"
-        ],
-        "category": "Food",
-        "difficulty": "easy"
-    },
-    {
-        "id": 32,
-        "question": "What planet is known as the Red Planet?",
-        "type": "multiple",
-        "correct_answer": "Mars",
-        "incorrect_answers": [
-            "Venus",
-            "Jupiter",
-            "Saturn"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 33,
-        "question": "Who wrote 'The Great Gatsby'?",
-        "type": "multiple",
-        "correct_answer": "F. Scott Fitzgerald",
-        "incorrect_answers": [
-            "Ernest Hemingway",
-            "Mark Twain",
-            "J.D. Salinger"
-        ],
-        "category": "Literature",
-        "difficulty": "medium"
-    },
-    {
-        "id": 34,
-        "question": "What is the capital of Italy?",
-        "type": "multiple",
-        "correct_answer": "Rome",
-        "incorrect_answers": [
-            "Venice",
-            "Milan",
-            "Florence"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 35,
-        "question": "What is the most abundant gas in Earth's atmosphere?",
-        "type": "multiple",
-        "correct_answer": "Nitrogen",
-        "incorrect_answers": [
-            "Oxygen",
-            "Carbon Dioxide",
-            "Hydrogen"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 36,
-        "question": "Who discovered gravity?",
-        "type": "multiple",
-        "correct_answer": "Isaac Newton",
-        "incorrect_answers": [
-            "Albert Einstein",
-            "Galileo Galilei",
-            "Nikola Tesla"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 37,
-        "question": "What is the main ingredient in guacamole?",
-        "type": "multiple",
-        "correct_answer": "Avocado",
-        "incorrect_answers": [
-            "Tomato",
-            "Cucumber",
-            "Pepper"
-        ],
-        "category": "Food",
-        "difficulty": "easy"
-    },
-    {
-        "id": 38,
-        "question": "What is the chemical formula for water?",
-        "type": "multiple",
-        "correct_answer": "H2O",
-        "incorrect_answers": [
-            "H2O2",
-            "HO",
-            "OH2"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 39,
-        "question": "Who painted 'Starry Night'?",
-        "type": "multiple",
-        "correct_answer": "Vincent van Gogh",
-        "incorrect_answers": [
-            "Pablo Picasso",
-            "Claude Monet",
-            "Georges Seurat"
-        ],
-        "category": "Art",
-        "difficulty": "medium"
-    },
-    {
-        "id": 40,
-        "question": "What is the capital of Germany?",
-        "type": "multiple",
-        "correct_answer": "Berlin",
-        "incorrect_answers": [
-            "Munich",
-            "Frankfurt",
-            "Hamburg"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 41,
-        "question": "What is the hardest natural substance on Earth?",
-        "type": "multiple",
-        "correct_answer": "Diamond",
-        "incorrect_answers": [
-            "Gold",
-            "Iron",
-            "Platinum"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 42,
-        "question": "What element does 'O' represent on the periodic table?",
-        "type": "multiple",
-        "correct_answer": "Oxygen",
-        "incorrect_answers": [
-            "Gold",
-            "Silver",
-            "Osmium"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 43,
-        "question": "What is the largest bone in the human body?",
-        "type": "multiple",
-        "correct_answer": "Femur",
-        "incorrect_answers": [
-            "Humerus",
-            "Tibia",
-            "Fibula"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 44,
-        "question": "Who wrote 'Hamlet'?",
-        "type": "multiple",
-        "correct_answer": "William Shakespeare",
-        "incorrect_answers": [
-            "Charles Dickens",
-            "George Orwell",
-            "Jane Austen"
-        ],
-        "category": "Literature",
-        "difficulty": "medium"
-    },
-    {
-        "id": 45,
-        "question": "What is the capital of Spain?",
-        "type": "multiple",
-        "correct_answer": "Madrid",
-        "incorrect_answers": [
-            "Barcelona",
-            "Seville",
-            "Valencia"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 46,
-        "question": "What is the chemical symbol for carbon?",
-        "type": "multiple",
-        "correct_answer": "C",
-        "incorrect_answers": [
-            "Ca",
-            "Cb",
-            "Ce"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 47,
-        "question": "Is photosynthesis a process used by plants to make food?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 48,
-        "question": "What is the tallest building in the world?",
-        "type": "multiple",
-        "correct_answer": "Burj Khalifa",
-        "incorrect_answers": [
-            "Shanghai Tower",
-            "Abraj Al-Bait Clock Tower",
-            "Ping An Finance Centre"
-        ],
-        "category": "Geography",
-        "difficulty": "medium"
-    },
-    {
-        "id": 49,
-        "question": "Who discovered electricity?",
-        "type": "multiple",
-        "correct_answer": "Benjamin Franklin",
-        "incorrect_answers": [
-            "Thomas Edison",
-            "Nikola Tesla",
-            "Alexander Graham Bell"
-        ],
-        "category": "Science",
-        "difficulty": "medium"
-    },
-    {
-        "id": 50,
-        "question": "What is the main ingredient in chocolate?",
-        "type": "multiple",
-        "correct_answer": "Cocoa",
-        "incorrect_answers": [
-            "Sugar",
-            "Milk",
-            "Vanilla"
-        ],
-        "category": "Food",
-        "difficulty": "easy"
-    },
-    {
-        "id": 51,
-        "question": "What is the capital of the United States?",
-        "type": "multiple",
-        "correct_answer": "Washington, D.C.",
-        "incorrect_answers": [
-            "New York",
-            "Los Angeles",
-            "Chicago"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 52,
-        "question": "What is the chemical symbol for potassium?",
-        "type": "multiple",
-        "correct_answer": "K",
-        "incorrect_answers": [
-            "P",
-            "Po",
-            "Pt"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 53,
-        "question": "Who painted the 'Last Supper'?",
-        "type": "multiple",
-        "correct_answer": "Leonardo da Vinci",
-        "incorrect_answers": [
-            "Michelangelo",
-            "Raphael",
-            "Donatello"
-        ],
-        "category": "Art",
-        "difficulty": "medium"
-    },
-    {
-        "id": 54,
-        "question": "What is the largest continent?",
-        "type": "multiple",
-        "correct_answer": "Asia",
-        "incorrect_answers": [
-            "Africa",
-            "North America",
-            "Europe"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 55,
-        "question": "Who invented the telephone?",
-        "type": "multiple",
-        "correct_answer": "Alexander Graham Bell",
-        "incorrect_answers": [
-            "Thomas Edison",
-            "Nikola Tesla",
-            "Guglielmo Marconi"
-        ],
-        "category": "Technology",
-        "difficulty": "medium"
-    },
-    {
-        "id": 56,
-        "question": "What is the main gas found in the air we breathe?",
-        "type": "multiple",
-        "correct_answer": "Nitrogen",
-        "incorrect_answers": [
-            "Oxygen",
-            "Carbon Dioxide",
-            "Hydrogen"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 57,
-        "question": "What is the primary language spoken in Brazil?",
-        "type": "multiple",
-        "correct_answer": "Portuguese",
-        "incorrect_answers": [
-            "Spanish",
-            "English",
-            "French"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 58,
-        "question": "Who wrote 'Pride and Prejudice'?",
-        "type": "multiple",
-        "correct_answer": "Jane Austen",
-        "incorrect_answers": [
-            "Charlotte Brontë",
-            "Mary Shelley",
-            "Emily Brontë"
-        ],
-        "category": "Literature",
-        "difficulty": "medium"
-    },
-    {
-        "id": 59,
-        "question": "What is the capital of Russia?",
-        "type": "multiple",
-        "correct_answer": "Moscow",
-        "incorrect_answers": [
-            "Saint Petersburg",
-            "Novosibirsk",
-            "Yekaterinburg"
-        ],
-        "category": "Geography",
-        "difficulty": "easy"
-    },
-    {
-        "id": 60,
-        "question": "What is the chemical symbol for calcium?",
-        "type": "multiple",
-        "correct_answer": "Ca",
-        "incorrect_answers": [
-            "C",
-            "Ce",
-            "Cu"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 61,
-        "question": "Is the sun a star?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ],
-        "category": "Science",
-        "difficulty": "easy"
-    },
-    {
-        "id": 62,
-        "question": "Who wrote 'Moby-Dick'?",
-        "type": "multiple",
-        "correct_answer": "Herman Melville",
-        "incorrect_answers": [
-            "Mark Twain",
-            "F. Scott Fitzgerald",
-            "Ernest Hemingway"
-        ],
-        "category": "Literature",
-        "difficulty": "medium"
-    }
-]
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "What is the largest planet in our Solar System?",
+            "type": "multiple",
+            "correct_answer": "Jupiter",
+            "incorrect_answers": [
+                "Saturn",
+                "Earth",
+                "Mars"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 2,
+            "question": "Who wrote 'To Kill a Mockingbird'?",
+            "type": "multiple",
+            "correct_answer": "Harper Lee",
+            "incorrect_answers": [
+                "Mark Twain",
+                "J.K. Rowling",
+                "Ernest Hemingway"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 3,
+            "question": "Is water wet?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 4,
+            "question": "What is the chemical symbol for gold?",
+            "type": "multiple",
+            "correct_answer": "Au",
+            "incorrect_answers": [
+                "Ag",
+                "Fe",
+                "Pb"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 5,
+            "question": "What is the capital of Japan?",
+            "type": "multiple",
+            "correct_answer": "Tokyo",
+            "incorrect_answers": [
+                "Osaka",
+                "Kyoto",
+                "Nagoya"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 6,
+            "question": "Is fire hot?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 7,
+            "question": "What is the speed of light?",
+            "type": "multiple",
+            "correct_answer": "299,792,458 m/s",
+            "incorrect_answers": [
+                "150,000,000 m/s",
+                "30,000,000 m/s",
+                "3,000,000 m/s"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 8,
+            "question": "Can humans breathe underwater without any equipment?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 9,
+            "question": "Who painted the Mona Lisa?",
+            "type": "multiple",
+            "correct_answer": "Leonardo da Vinci",
+            "incorrect_answers": [
+                "Vincent van Gogh",
+                "Pablo Picasso",
+                "Claude Monet"
+            ],
+            "category": "Art",
+            "difficulty": "medium"
+        },
+        {
+            "id": 10,
+            "question": "What is the boiling point of water?",
+            "type": "multiple",
+            "correct_answer": "100°C",
+            "incorrect_answers": [
+                "90°C",
+                "110°C",
+                "120°C"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 11,
+            "question": "What is the capital of France?",
+            "type": "multiple",
+            "correct_answer": "Paris",
+            "incorrect_answers": [
+                "Berlin",
+                "Madrid",
+                "Rome"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 12,
+            "question": "What is the chemical symbol for oxygen?",
+            "type": "multiple",
+            "correct_answer": "O",
+            "incorrect_answers": [
+                "Ox",
+                "O2",
+                "Om"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 13,
+            "question": "Is the sky blue?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 14,
+            "question": "What is the tallest mountain in the world?",
+            "type": "multiple",
+            "correct_answer": "Mount Everest",
+            "incorrect_answers": [
+                "K2",
+                "Kangchenjunga",
+                "Lhotse"
+            ],
+            "category": "Geography",
+            "difficulty": "medium"
+        },
+        {
+            "id": 15,
+            "question": "Who developed the theory of relativity?",
+            "type": "multiple",
+            "correct_answer": "Albert Einstein",
+            "incorrect_answers": [
+                "Isaac Newton",
+                "Galileo Galilei",
+                "Nikola Tesla"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 16,
+            "question": "What is the capital of Australia?",
+            "type": "multiple",
+            "correct_answer": "Canberra",
+            "incorrect_answers": [
+                "Sydney",
+                "Melbourne",
+                "Brisbane"
+            ],
+            "category": "Geography",
+            "difficulty": "medium"
+        },
+        {
+            "id": 17,
+            "question": "What is the chemical symbol for iron?",
+            "type": "multiple",
+            "correct_answer": "Fe",
+            "incorrect_answers": [
+                "Ir",
+                "In",
+                "I"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 18,
+            "question": "Is the earth flat?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 19,
+            "question": "Who wrote '1984'?",
+            "type": "multiple",
+            "correct_answer": "George Orwell",
+            "incorrect_answers": [
+                "Aldous Huxley",
+                "Ray Bradbury",
+                "Jules Verne"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 20,
+            "question": "What is the chemical symbol for hydrogen?",
+            "type": "multiple",
+            "correct_answer": "H",
+            "incorrect_answers": [
+                "Hy",
+                "He",
+                "Ha"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 21,
+            "question": "What is the capital of Canada?",
+            "type": "multiple",
+            "correct_answer": "Ottawa",
+            "incorrect_answers": [
+                "Toronto",
+                "Vancouver",
+                "Montreal"
+            ],
+            "category": "Geography",
+            "difficulty": "medium"
+        },
+        {
+            "id": 22,
+            "question": "Who discovered penicillin?",
+            "type": "multiple",
+            "correct_answer": "Alexander Fleming",
+            "incorrect_answers": [
+                "Marie Curie",
+                "Louis Pasteur",
+                "Gregor Mendel"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 23,
+            "question": "What is the largest ocean on Earth?",
+            "type": "multiple",
+            "correct_answer": "Pacific Ocean",
+            "incorrect_answers": [
+                "Atlantic Ocean",
+                "Indian Ocean",
+                "Arctic Ocean"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 24,
+            "question": "Who is known as the 'Father of Computers'?",
+            "type": "multiple",
+            "correct_answer": "Charles Babbage",
+            "incorrect_answers": [
+                "Alan Turing",
+                "John von Neumann",
+                "Bill Gates"
+            ],
+            "category": "Technology",
+            "difficulty": "medium"
+        },
+        {
+            "id": 25,
+            "question": "What is the largest mammal in the world?",
+            "type": "multiple",
+            "correct_answer": "Blue Whale",
+            "incorrect_answers": [
+                "Elephant",
+                "Giraffe",
+                "Hippopotamus"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 26,
+            "question": "What is the chemical symbol for sodium?",
+            "type": "multiple",
+            "correct_answer": "Na",
+            "incorrect_answers": [
+                "So",
+                "Sa",
+                "S"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 27,
+            "question": "Who painted the Sistine Chapel ceiling?",
+            "type": "multiple",
+            "correct_answer": "Michelangelo",
+            "incorrect_answers": [
+                "Leonardo da Vinci",
+                "Raphael",
+                "Donatello"
+            ],
+            "category": "Art",
+            "difficulty": "medium"
+        },
+        {
+            "id": 28,
+            "question": "What is the smallest country in the world?",
+            "type": "multiple",
+            "correct_answer": "Vatican City",
+            "incorrect_answers": [
+                "Monaco",
+                "Nauru",
+                "San Marino"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 29,
+            "question": "What is the chemical symbol for silver?",
+            "type": "multiple",
+            "correct_answer": "Ag",
+            "incorrect_answers": [
+                "Si",
+                "Au",
+                "Pb"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 30,
+            "question": "Is the earth the center of the solar system?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 31,
+            "question": "What is the main ingredient in traditional Japanese miso soup?",
+            "type": "multiple",
+            "correct_answer": "Miso paste",
+            "incorrect_answers": [
+                "Soy sauce",
+                "Tofu",
+                "Seaweed"
+            ],
+            "category": "Food",
+            "difficulty": "easy"
+        },
+        {
+            "id": 32,
+            "question": "What planet is known as the Red Planet?",
+            "type": "multiple",
+            "correct_answer": "Mars",
+            "incorrect_answers": [
+                "Venus",
+                "Jupiter",
+                "Saturn"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 33,
+            "question": "Who wrote 'The Great Gatsby'?",
+            "type": "multiple",
+            "correct_answer": "F. Scott Fitzgerald",
+            "incorrect_answers": [
+                "Ernest Hemingway",
+                "Mark Twain",
+                "J.D. Salinger"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 34,
+            "question": "What is the capital of Italy?",
+            "type": "multiple",
+            "correct_answer": "Rome",
+            "incorrect_answers": [
+                "Venice",
+                "Milan",
+                "Florence"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 35,
+            "question": "What is the most abundant gas in Earth's atmosphere?",
+            "type": "multiple",
+            "correct_answer": "Nitrogen",
+            "incorrect_answers": [
+                "Oxygen",
+                "Carbon Dioxide",
+                "Hydrogen"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 36,
+            "question": "Who discovered gravity?",
+            "type": "multiple",
+            "correct_answer": "Isaac Newton",
+            "incorrect_answers": [
+                "Albert Einstein",
+                "Galileo Galilei",
+                "Nikola Tesla"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 37,
+            "question": "What is the main ingredient in guacamole?",
+            "type": "multiple",
+            "correct_answer": "Avocado",
+            "incorrect_answers": [
+                "Tomato",
+                "Cucumber",
+                "Pepper"
+            ],
+            "category": "Food",
+            "difficulty": "easy"
+        },
+        {
+            "id": 38,
+            "question": "What is the chemical formula for water?",
+            "type": "multiple",
+            "correct_answer": "H2O",
+            "incorrect_answers": [
+                "H2O2",
+                "HO",
+                "OH2"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 39,
+            "question": "Who painted 'Starry Night'?",
+            "type": "multiple",
+            "correct_answer": "Vincent van Gogh",
+            "incorrect_answers": [
+                "Pablo Picasso",
+                "Claude Monet",
+                "Georges Seurat"
+            ],
+            "category": "Art",
+            "difficulty": "medium"
+        },
+        {
+            "id": 40,
+            "question": "What is the capital of Germany?",
+            "type": "multiple",
+            "correct_answer": "Berlin",
+            "incorrect_answers": [
+                "Munich",
+                "Frankfurt",
+                "Hamburg"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 41,
+            "question": "What is the hardest natural substance on Earth?",
+            "type": "multiple",
+            "correct_answer": "Diamond",
+            "incorrect_answers": [
+                "Gold",
+                "Iron",
+                "Platinum"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 42,
+            "question": "What element does 'O' represent on the periodic table?",
+            "type": "multiple",
+            "correct_answer": "Oxygen",
+            "incorrect_answers": [
+                "Gold",
+                "Silver",
+                "Osmium"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 43,
+            "question": "What is the largest bone in the human body?",
+            "type": "multiple",
+            "correct_answer": "Femur",
+            "incorrect_answers": [
+                "Humerus",
+                "Tibia",
+                "Fibula"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 44,
+            "question": "Who wrote 'Hamlet'?",
+            "type": "multiple",
+            "correct_answer": "William Shakespeare",
+            "incorrect_answers": [
+                "Charles Dickens",
+                "George Orwell",
+                "Jane Austen"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 45,
+            "question": "What is the capital of Spain?",
+            "type": "multiple",
+            "correct_answer": "Madrid",
+            "incorrect_answers": [
+                "Barcelona",
+                "Seville",
+                "Valencia"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 46,
+            "question": "What is the chemical symbol for carbon?",
+            "type": "multiple",
+            "correct_answer": "C",
+            "incorrect_answers": [
+                "Ca",
+                "Cb",
+                "Ce"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 47,
+            "question": "Is photosynthesis a process used by plants to make food?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 48,
+            "question": "What is the tallest building in the world?",
+            "type": "multiple",
+            "correct_answer": "Burj Khalifa",
+            "incorrect_answers": [
+                "Shanghai Tower",
+                "Abraj Al-Bait Clock Tower",
+                "Ping An Finance Centre"
+            ],
+            "category": "Geography",
+            "difficulty": "medium"
+        },
+        {
+            "id": 49,
+            "question": "Who discovered electricity?",
+            "type": "multiple",
+            "correct_answer": "Benjamin Franklin",
+            "incorrect_answers": [
+                "Thomas Edison",
+                "Nikola Tesla",
+                "Alexander Graham Bell"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 50,
+            "question": "What is the main ingredient in chocolate?",
+            "type": "multiple",
+            "correct_answer": "Cocoa",
+            "incorrect_answers": [
+                "Sugar",
+                "Milk",
+                "Vanilla"
+            ],
+            "category": "Food",
+            "difficulty": "easy"
+        },
+        {
+            "id": 51,
+            "question": "What is the capital of the United States?",
+            "type": "multiple",
+            "correct_answer": "Washington, D.C.",
+            "incorrect_answers": [
+                "New York",
+                "Los Angeles",
+                "Chicago"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 52,
+            "question": "What is the chemical symbol for potassium?",
+            "type": "multiple",
+            "correct_answer": "K",
+            "incorrect_answers": [
+                "P",
+                "Po",
+                "Pt"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 53,
+            "question": "Who painted the 'Last Supper'?",
+            "type": "multiple",
+            "correct_answer": "Leonardo da Vinci",
+            "incorrect_answers": [
+                "Michelangelo",
+                "Raphael",
+                "Donatello"
+            ],
+            "category": "Art",
+            "difficulty": "medium"
+        },
+        {
+            "id": 54,
+            "question": "What is the largest continent?",
+            "type": "multiple",
+            "correct_answer": "Asia",
+            "incorrect_answers": [
+                "Africa",
+                "North America",
+                "Europe"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 55,
+            "question": "Who invented the telephone?",
+            "type": "multiple",
+            "correct_answer": "Alexander Graham Bell",
+            "incorrect_answers": [
+                "Thomas Edison",
+                "Nikola Tesla",
+                "Guglielmo Marconi"
+            ],
+            "category": "Technology",
+            "difficulty": "medium"
+        },
+        {
+            "id": 56,
+            "question": "What is the main gas found in the air we breathe?",
+            "type": "multiple",
+            "correct_answer": "Nitrogen",
+            "incorrect_answers": [
+                "Oxygen",
+                "Carbon Dioxide",
+                "Hydrogen"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 57,
+            "question": "What is the primary language spoken in Brazil?",
+            "type": "multiple",
+            "correct_answer": "Portuguese",
+            "incorrect_answers": [
+                "Spanish",
+                "English",
+                "French"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 58,
+            "question": "Who wrote 'Pride and Prejudice'?",
+            "type": "multiple",
+            "correct_answer": "Jane Austen",
+            "incorrect_answers": [
+                "Charlotte Brontë",
+                "Mary Shelley",
+                "Emily Brontë"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 59,
+            "question": "What is the capital of Russia?",
+            "type": "multiple",
+            "correct_answer": "Moscow",
+            "incorrect_answers": [
+                "Saint Petersburg",
+                "Novosibirsk",
+                "Yekaterinburg"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 60,
+            "question": "What is the chemical symbol for calcium?",
+            "type": "multiple",
+            "correct_answer": "Ca",
+            "incorrect_answers": [
+                "C",
+                "Ce",
+                "Cu"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 61,
+            "question": "Is the sun a star?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 62,
+            "question": "Who wrote 'Moby-Dick'?",
+            "type": "multiple",
+            "correct_answer": "Herman Melville",
+            "incorrect_answers": [
+                "Mark Twain",
+                "F. Scott Fitzgerald",
+                "Ernest Hemingway"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        }
+    ]
+}
