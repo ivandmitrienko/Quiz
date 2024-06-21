@@ -13,7 +13,7 @@ import UserButton from '../UserButtons/TypeOfButton';
 import UserTestModal from './UserTestModal';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';
 import { Question } from '../../types/types';
-import { questions } from '../../assets/questions/Questions';
+import { questions } from '../../assets/server/Questions';
 
 export default function UserTest() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
