@@ -4,9 +4,9 @@ import { Grid, SelectChangeEvent, TextField } from '@mui/material';
 import Box from '@mui/material/Box';
 
 import UserButtonGroup from '../UserButtons/UserButtonGroup';
-import numberQuestions from '../utilies/numberQuestions';
+import numberQuestions from '../../assets/utilies/numberQuestions';
 import UserButton from '../UserButtons/TypeOfButton';
-import { IQuizConfigState } from '../types/types';
+import { IQuizConfigState } from '../../assets/types/types';
 import UserSelect from './FormSelect';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';
 

@@ -1,4 +1,4 @@
-import { IBotton } from '../types/types';
+import { IBotton } from '../../assets/types/types';
 
 import { Link } from 'react-router-dom';
 

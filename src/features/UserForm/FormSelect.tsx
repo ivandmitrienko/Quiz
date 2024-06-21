@@ -1,6 +1,6 @@
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
-import { ISelect } from '../types/types';
+import { ISelect } from '../../assets/types/types';
 
 export default function UserSelect({
   children,

@@ -1,5 +1,5 @@
 import { Button } from '@mui/material';
-import { IBotton } from '../types/types';
+import { IBotton } from '../../assets/types/types';
 
 type UserButton = Pick<IBotton, 'children' | 'handleClick'>;
 

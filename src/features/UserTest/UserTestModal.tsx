@@ -4,7 +4,7 @@ import { Box, Modal } from '@mui/material';
 
 import UserButton from '../UserButtons/TypeOfButton';
 
-import { IModal } from '../types/types';
+import { IModal } from '../../assets/types/types';
 
 export default function UserTestModal({ modal, handleClick }: IModal) {
   const style = {
