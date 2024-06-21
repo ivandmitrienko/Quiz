@@ -13,5 +13,4 @@ export const questions = [
     correct_answer: 'Paris',
     incorrect_answers: ['London', 'Berlin', 'Madrid'],
   },
-  // Add more questions as needed
 ];
