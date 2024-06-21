@@ -1,9 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import Layout from '../Layout';
-import UserForm from '../../assets/UserForm/UserForm';
+import UserForm from '../UserForm/UserForm';
 import UserTest from '../UserTest/UserTest';
-import UserResult from '../../assets/UserResult/UserResult';
+import UserResult from '../UserResult/UserResult';
 
 export const router = createBrowserRouter([
   {

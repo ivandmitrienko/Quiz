@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material';
-import { PropsChildren } from '../../assets/types/types';
+import { PropsChildren } from '../../types/types';
 
 export default function TitleOfPage({ children }: PropsChildren) {
   return (
