@@ -70,7 +70,7 @@ export default function UserForm() {
             value={config.category}
             name='category'
             handleSelectChange={handleChange}
-            values={['general', 'sports', 'history']}
+            values={['Literature', 'Science', 'Geography']}
           >
             Category
           </UserSelect>

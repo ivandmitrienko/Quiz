@@ -8,1001 +8,785 @@
             "Saturn",
             "Earth",
             "Mars"
-        ]
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 2,
-        "question": "What is the largest planet in our Solar System?",
+        "question": "Who wrote 'To Kill a Mockingbird'?",
         "type": "multiple",
-        "correct_answer": "Jupiter",
+        "correct_answer": "Harper Lee",
         "incorrect_answers": [
-            "Saturn",
-            "Earth",
-            "Mars"
-        ]
+            "Mark Twain",
+            "J.K. Rowling",
+            "Ernest Hemingway"
+        ],
+        "category": "Literature",
+        "difficulty": "medium"
     },
     {
         "id": 3,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
-        "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "question": "Is water wet?",
+        "type": "boolean",
+        "correct_answer": "True",
         "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
+            "False"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 4,
-        "question": "Is water wet?",
-        "type": "boolean",
-        "correct_answer": "True",
+        "question": "What is the chemical symbol for gold?",
+        "type": "multiple",
+        "correct_answer": "Au",
         "incorrect_answers": [
-            "False"
-        ]
+            "Ag",
+            "Fe",
+            "Pb"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 5,
-        "question": "What is the largest planet in our Solar System?",
+        "question": "What is the capital of Japan?",
         "type": "multiple",
-        "correct_answer": "Jupiter",
+        "correct_answer": "Tokyo",
         "incorrect_answers": [
-            "Saturn",
-            "Earth",
-            "Mars"
-        ]
+            "Osaka",
+            "Kyoto",
+            "Nagoya"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 6,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
-        "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "question": "Is fire hot?",
+        "type": "boolean",
+        "correct_answer": "True",
         "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
+            "False"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 7,
-        "question": "Is the moon made of cheese?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "What is the speed of light?",
+        "type": "multiple",
+        "correct_answer": "299,792,458 m/s",
         "incorrect_answers": [
-            "True"
-        ]
+            "150,000,000 m/s",
+            "30,000,000 m/s",
+            "3,000,000 m/s"
+        ],
+        "category": "Science",
+        "difficulty": "medium"
     },
     {
         "id": 8,
-        "question": "What is the largest planet in our Solar System?",
-        "type": "multiple",
-        "correct_answer": "Jupiter",
+        "question": "Can humans breathe underwater without any equipment?",
+        "type": "boolean",
+        "correct_answer": "False",
         "incorrect_answers": [
-            "Saturn",
-            "Earth",
-            "Mars"
-        ]
+            "True"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 9,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "Who painted the Mona Lisa?",
+        "type": "multiple",
+        "correct_answer": "Leonardo da Vinci",
         "incorrect_answers": [
-            "True"
-        ]
+            "Vincent van Gogh",
+            "Pablo Picasso",
+            "Claude Monet"
+        ],
+        "category": "Art",
+        "difficulty": "medium"
     },
     {
         "id": 10,
-        "question": "What is the speed of light?",
+        "question": "What is the boiling point of water?",
         "type": "multiple",
-        "correct_answer": "299,792,458 m/s",
+        "correct_answer": "100°C",
         "incorrect_answers": [
-            "150,000,000 m/s",
-            "30,000,000 m/s",
-            "3,000,000 m/s"
-        ]
+            "90°C",
+            "110°C",
+            "120°C"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 11,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
+        "question": "What is the capital of France?",
+        "type": "multiple",
+        "correct_answer": "Paris",
         "incorrect_answers": [
-            "False"
-        ]
+            "Berlin",
+            "Madrid",
+            "Rome"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 12,
-        "question": "Is water wet?",
-        "type": "boolean",
-        "correct_answer": "True",
+        "question": "What is the chemical symbol for oxygen?",
+        "type": "multiple",
+        "correct_answer": "O",
         "incorrect_answers": [
-            "False"
-        ]
+            "Ox",
+            "O2",
+            "Om"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 13,
-        "question": "What is the largest planet in our Solar System?",
-        "type": "multiple",
-        "correct_answer": "Jupiter",
+        "question": "Is the sky blue?",
+        "type": "boolean",
+        "correct_answer": "True",
         "incorrect_answers": [
-            "Saturn",
-            "Earth",
-            "Mars"
-        ]
+            "False"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 14,
-        "question": "What is the capital of Japan?",
+        "question": "What is the tallest mountain in the world?",
         "type": "multiple",
-        "correct_answer": "Tokyo",
+        "correct_answer": "Mount Everest",
         "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
+            "K2",
+            "Kangchenjunga",
+            "Lhotse"
+        ],
+        "category": "Geography",
+        "difficulty": "medium"
     },
     {
         "id": 15,
-        "question": "Is the moon made of cheese?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "Who developed the theory of relativity?",
+        "type": "multiple",
+        "correct_answer": "Albert Einstein",
         "incorrect_answers": [
-            "True"
-        ]
+            "Isaac Newton",
+            "Galileo Galilei",
+            "Nikola Tesla"
+        ],
+        "category": "Science",
+        "difficulty": "medium"
     },
     {
         "id": 16,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "question": "What is the capital of Australia?",
         "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "correct_answer": "Canberra",
         "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
+            "Sydney",
+            "Melbourne",
+            "Brisbane"
+        ],
+        "category": "Geography",
+        "difficulty": "medium"
     },
     {
         "id": 17,
-        "question": "What is the speed of light?",
+        "question": "What is the chemical symbol for iron?",
         "type": "multiple",
-        "correct_answer": "299,792,458 m/s",
+        "correct_answer": "Fe",
         "incorrect_answers": [
-            "150,000,000 m/s",
-            "30,000,000 m/s",
-            "3,000,000 m/s"
-        ]
+            "Ir",
+            "In",
+            "I"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 18,
-        "question": "What is the chemical symbol for gold?",
-        "type": "multiple",
-        "correct_answer": "Au",
+        "question": "Is the earth flat?",
+        "type": "boolean",
+        "correct_answer": "False",
         "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
+            "True"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 19,
-        "question": "What is the capital of Japan?",
+        "question": "Who wrote '1984'?",
         "type": "multiple",
-        "correct_answer": "Tokyo",
+        "correct_answer": "George Orwell",
         "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
+            "Aldous Huxley",
+            "Ray Bradbury",
+            "Jules Verne"
+        ],
+        "category": "Literature",
+        "difficulty": "medium"
     },
     {
         "id": 20,
-        "question": "What is the largest planet in our Solar System?",
+        "question": "What is the chemical symbol for hydrogen?",
         "type": "multiple",
-        "correct_answer": "Jupiter",
+        "correct_answer": "H",
         "incorrect_answers": [
-            "Saturn",
-            "Earth",
-            "Mars"
-        ]
+            "Hy",
+            "He",
+            "Ha"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 21,
-        "question": "What is the chemical symbol for gold?",
+        "question": "What is the capital of Canada?",
         "type": "multiple",
-        "correct_answer": "Au",
+        "correct_answer": "Ottawa",
         "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
+            "Toronto",
+            "Vancouver",
+            "Montreal"
+        ],
+        "category": "Geography",
+        "difficulty": "medium"
     },
     {
         "id": 22,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "question": "Who discovered penicillin?",
         "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "correct_answer": "Alexander Fleming",
         "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
+            "Marie Curie",
+            "Louis Pasteur",
+            "Gregor Mendel"
+        ],
+        "category": "Science",
+        "difficulty": "medium"
     },
     {
         "id": 23,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "What is the largest ocean on Earth?",
+        "type": "multiple",
+        "correct_answer": "Pacific Ocean",
         "incorrect_answers": [
-            "True"
-        ]
+            "Atlantic Ocean",
+            "Indian Ocean",
+            "Arctic Ocean"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 24,
-        "question": "What is the chemical symbol for gold?",
+        "question": "Who is known as the 'Father of Computers'?",
         "type": "multiple",
-        "correct_answer": "Au",
+        "correct_answer": "Charles Babbage",
         "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
+            "Alan Turing",
+            "John von Neumann",
+            "Bill Gates"
+        ],
+        "category": "Technology",
+        "difficulty": "medium"
     },
     {
         "id": 25,
-        "question": "What is the chemical symbol for gold?",
+        "question": "What is the largest mammal in the world?",
         "type": "multiple",
-        "correct_answer": "Au",
+        "correct_answer": "Blue Whale",
         "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
+            "Elephant",
+            "Giraffe",
+            "Hippopotamus"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 26,
-        "question": "What is the speed of light?",
+        "question": "What is the chemical symbol for sodium?",
         "type": "multiple",
-        "correct_answer": "299,792,458 m/s",
+        "correct_answer": "Na",
         "incorrect_answers": [
-            "150,000,000 m/s",
-            "30,000,000 m/s",
-            "3,000,000 m/s"
-        ]
+            "So",
+            "Sa",
+            "S"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 27,
-        "question": "What is the chemical symbol for gold?",
+        "question": "Who painted the Sistine Chapel ceiling?",
         "type": "multiple",
-        "correct_answer": "Au",
+        "correct_answer": "Michelangelo",
         "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
+            "Leonardo da Vinci",
+            "Raphael",
+            "Donatello"
+        ],
+        "category": "Art",
+        "difficulty": "medium"
     },
     {
         "id": 28,
-        "question": "Is the moon made of cheese?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "What is the smallest country in the world?",
+        "type": "multiple",
+        "correct_answer": "Vatican City",
         "incorrect_answers": [
-            "True"
-        ]
+            "Monaco",
+            "Nauru",
+            "San Marino"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 29,
-        "question": "What is the capital of Japan?",
+        "question": "What is the chemical symbol for silver?",
         "type": "multiple",
-        "correct_answer": "Tokyo",
+        "correct_answer": "Ag",
         "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
+            "Si",
+            "Au",
+            "Pb"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 30,
-        "question": "Is fire hot?",
+        "question": "Is the earth the center of the solar system?",
         "type": "boolean",
-        "correct_answer": "True",
+        "correct_answer": "False",
         "incorrect_answers": [
-            "False"
-        ]
+            "True"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 31,
-        "question": "What is the chemical symbol for gold?",
+        "question": "What is the main ingredient in traditional Japanese miso soup?",
         "type": "multiple",
-        "correct_answer": "Au",
+        "correct_answer": "Miso paste",
         "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
+            "Soy sauce",
+            "Tofu",
+            "Seaweed"
+        ],
+        "category": "Food",
+        "difficulty": "easy"
     },
     {
         "id": 32,
-        "question": "What is the speed of light?",
+        "question": "What planet is known as the Red Planet?",
         "type": "multiple",
-        "correct_answer": "299,792,458 m/s",
+        "correct_answer": "Mars",
         "incorrect_answers": [
-            "150,000,000 m/s",
-            "30,000,000 m/s",
-            "3,000,000 m/s"
-        ]
+            "Venus",
+            "Jupiter",
+            "Saturn"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 33,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "Who wrote 'The Great Gatsby'?",
+        "type": "multiple",
+        "correct_answer": "F. Scott Fitzgerald",
         "incorrect_answers": [
-            "True"
-        ]
+            "Ernest Hemingway",
+            "Mark Twain",
+            "J.D. Salinger"
+        ],
+        "category": "Literature",
+        "difficulty": "medium"
     },
     {
         "id": 34,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "question": "What is the capital of Italy?",
         "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "correct_answer": "Rome",
         "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
+            "Venice",
+            "Milan",
+            "Florence"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 35,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
+        "question": "What is the most abundant gas in Earth's atmosphere?",
+        "type": "multiple",
+        "correct_answer": "Nitrogen",
         "incorrect_answers": [
-            "False"
-        ]
+            "Oxygen",
+            "Carbon Dioxide",
+            "Hydrogen"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 36,
-        "question": "Is water wet?",
-        "type": "boolean",
-        "correct_answer": "True",
+        "question": "Who discovered gravity?",
+        "type": "multiple",
+        "correct_answer": "Isaac Newton",
         "incorrect_answers": [
-            "False"
-        ]
+            "Albert Einstein",
+            "Galileo Galilei",
+            "Nikola Tesla"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 37,
-        "question": "What is the capital of Japan?",
+        "question": "What is the main ingredient in guacamole?",
         "type": "multiple",
-        "correct_answer": "Tokyo",
+        "correct_answer": "Avocado",
         "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
+            "Tomato",
+            "Cucumber",
+            "Pepper"
+        ],
+        "category": "Food",
+        "difficulty": "easy"
     },
     {
         "id": 38,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
+        "question": "What is the chemical formula for water?",
+        "type": "multiple",
+        "correct_answer": "H2O",
         "incorrect_answers": [
-            "False"
-        ]
+            "H2O2",
+            "HO",
+            "OH2"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 39,
-        "question": "What is the largest planet in our Solar System?",
+        "question": "Who painted 'Starry Night'?",
         "type": "multiple",
-        "correct_answer": "Jupiter",
+        "correct_answer": "Vincent van Gogh",
         "incorrect_answers": [
-            "Saturn",
-            "Earth",
-            "Mars"
-        ]
+            "Pablo Picasso",
+            "Claude Monet",
+            "Georges Seurat"
+        ],
+        "category": "Art",
+        "difficulty": "medium"
     },
     {
         "id": 40,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "question": "What is the capital of Germany?",
         "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "correct_answer": "Berlin",
         "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
+            "Munich",
+            "Frankfurt",
+            "Hamburg"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 41,
-        "question": "What is the largest planet in our Solar System?",
+        "question": "What is the hardest natural substance on Earth?",
         "type": "multiple",
-        "correct_answer": "Jupiter",
+        "correct_answer": "Diamond",
         "incorrect_answers": [
-            "Saturn",
-            "Earth",
-            "Mars"
-        ]
+            "Gold",
+            "Iron",
+            "Platinum"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 42,
-        "question": "Is the Earth flat?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "What element does 'O' represent on the periodic table?",
+        "type": "multiple",
+        "correct_answer": "Oxygen",
         "incorrect_answers": [
-            "True"
-        ]
+            "Gold",
+            "Silver",
+            "Osmium"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 43,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
+        "question": "What is the largest bone in the human body?",
+        "type": "multiple",
+        "correct_answer": "Femur",
         "incorrect_answers": [
-            "False"
-        ]
+            "Humerus",
+            "Tibia",
+            "Fibula"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 44,
-        "question": "Is the moon made of cheese?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "Who wrote 'Hamlet'?",
+        "type": "multiple",
+        "correct_answer": "William Shakespeare",
         "incorrect_answers": [
-            "True"
-        ]
+            "Charles Dickens",
+            "George Orwell",
+            "Jane Austen"
+        ],
+        "category": "Literature",
+        "difficulty": "medium"
     },
     {
         "id": 45,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
+        "question": "What is the capital of Spain?",
+        "type": "multiple",
+        "correct_answer": "Madrid",
         "incorrect_answers": [
-            "False"
-        ]
+            "Barcelona",
+            "Seville",
+            "Valencia"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 46,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "question": "What is the chemical symbol for carbon?",
         "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "correct_answer": "C",
         "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
+            "Ca",
+            "Cb",
+            "Ce"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 47,
-        "question": "What is the largest planet in our Solar System?",
-        "type": "multiple",
-        "correct_answer": "Jupiter",
+        "question": "Is photosynthesis a process used by plants to make food?",
+        "type": "boolean",
+        "correct_answer": "True",
         "incorrect_answers": [
-            "Saturn",
-            "Earth",
-            "Mars"
-        ]
+            "False"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 48,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "What is the tallest building in the world?",
+        "type": "multiple",
+        "correct_answer": "Burj Khalifa",
         "incorrect_answers": [
-            "True"
-        ]
+            "Shanghai Tower",
+            "Abraj Al-Bait Clock Tower",
+            "Ping An Finance Centre"
+        ],
+        "category": "Geography",
+        "difficulty": "medium"
     },
     {
         "id": 49,
-        "question": "Is the moon made of cheese?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "Who discovered electricity?",
+        "type": "multiple",
+        "correct_answer": "Benjamin Franklin",
         "incorrect_answers": [
-            "True"
-        ]
+            "Thomas Edison",
+            "Nikola Tesla",
+            "Alexander Graham Bell"
+        ],
+        "category": "Science",
+        "difficulty": "medium"
     },
     {
         "id": 50,
-        "question": "Is the Earth flat?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "What is the main ingredient in chocolate?",
+        "type": "multiple",
+        "correct_answer": "Cocoa",
         "incorrect_answers": [
-            "True"
-        ]
+            "Sugar",
+            "Milk",
+            "Vanilla"
+        ],
+        "category": "Food",
+        "difficulty": "easy"
     },
     {
         "id": 51,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "question": "What is the capital of the United States?",
         "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "correct_answer": "Washington, D.C.",
         "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
+            "New York",
+            "Los Angeles",
+            "Chicago"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 52,
-        "question": "Is the Earth flat?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "What is the chemical symbol for potassium?",
+        "type": "multiple",
+        "correct_answer": "K",
         "incorrect_answers": [
-            "True"
-        ]
+            "P",
+            "Po",
+            "Pt"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 53,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "question": "Who painted the 'Last Supper'?",
         "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "correct_answer": "Leonardo da Vinci",
         "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
+            "Michelangelo",
+            "Raphael",
+            "Donatello"
+        ],
+        "category": "Art",
+        "difficulty": "medium"
     },
     {
         "id": 54,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "question": "What is the largest continent?",
         "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "correct_answer": "Asia",
         "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
+            "Africa",
+            "North America",
+            "Europe"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 55,
-        "question": "What is the speed of light?",
+        "question": "Who invented the telephone?",
         "type": "multiple",
-        "correct_answer": "299,792,458 m/s",
+        "correct_answer": "Alexander Graham Bell",
         "incorrect_answers": [
-            "150,000,000 m/s",
-            "30,000,000 m/s",
-            "3,000,000 m/s"
-        ]
+            "Thomas Edison",
+            "Nikola Tesla",
+            "Guglielmo Marconi"
+        ],
+        "category": "Technology",
+        "difficulty": "medium"
     },
     {
         "id": 56,
-        "question": "What is the capital of Japan?",
+        "question": "What is the main gas found in the air we breathe?",
         "type": "multiple",
-        "correct_answer": "Tokyo",
+        "correct_answer": "Nitrogen",
         "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
+            "Oxygen",
+            "Carbon Dioxide",
+            "Hydrogen"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 57,
-        "question": "What is the chemical symbol for gold?",
+        "question": "What is the primary language spoken in Brazil?",
         "type": "multiple",
-        "correct_answer": "Au",
+        "correct_answer": "Portuguese",
         "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
+            "Spanish",
+            "English",
+            "French"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 58,
-        "question": "What is the chemical symbol for gold?",
+        "question": "Who wrote 'Pride and Prejudice'?",
         "type": "multiple",
-        "correct_answer": "Au",
+        "correct_answer": "Jane Austen",
         "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
+            "Charlotte Brontë",
+            "Mary Shelley",
+            "Emily Brontë"
+        ],
+        "category": "Literature",
+        "difficulty": "medium"
     },
     {
         "id": 59,
-        "question": "Is water wet?",
-        "type": "boolean",
-        "correct_answer": "True",
+        "question": "What is the capital of Russia?",
+        "type": "multiple",
+        "correct_answer": "Moscow",
         "incorrect_answers": [
-            "False"
-        ]
+            "Saint Petersburg",
+            "Novosibirsk",
+            "Yekaterinburg"
+        ],
+        "category": "Geography",
+        "difficulty": "easy"
     },
     {
         "id": 60,
-        "question": "Is the moon made of cheese?",
-        "type": "boolean",
-        "correct_answer": "False",
+        "question": "What is the chemical symbol for calcium?",
+        "type": "multiple",
+        "correct_answer": "Ca",
         "incorrect_answers": [
-            "True"
-        ]
+            "C",
+            "Ce",
+            "Cu"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 61,
-        "question": "Is the moon made of cheese?",
+        "question": "Is the sun a star?",
         "type": "boolean",
-        "correct_answer": "False",
+        "correct_answer": "True",
         "incorrect_answers": [
-            "True"
-        ]
+            "False"
+        ],
+        "category": "Science",
+        "difficulty": "easy"
     },
     {
         "id": 62,
-        "question": "What is the capital of Japan?",
+        "question": "Who wrote 'Moby-Dick'?",
         "type": "multiple",
-        "correct_answer": "Tokyo",
-        "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
-    },
-    {
-        "id": 63,
-        "question": "What is the chemical symbol for gold?",
-        "type": "multiple",
-        "correct_answer": "Au",
-        "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
-    },
-    {
-        "id": 64,
-        "question": "What is the capital of Japan?",
-        "type": "multiple",
-        "correct_answer": "Tokyo",
-        "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
-    },
-    {
-        "id": 65,
-        "question": "Is the moon made of cheese?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 66,
-        "question": "Is the moon made of cheese?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 67,
-        "question": "Is water wet?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ]
-    },
-    {
-        "id": 68,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ]
-    },
-    {
-        "id": 69,
-        "question": "Is the Earth flat?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 70,
-        "question": "What is the speed of light?",
-        "type": "multiple",
-        "correct_answer": "299,792,458 m/s",
-        "incorrect_answers": [
-            "150,000,000 m/s",
-            "30,000,000 m/s",
-            "3,000,000 m/s"
-        ]
-    },
-    {
-        "id": 71,
-        "question": "What is the speed of light?",
-        "type": "multiple",
-        "correct_answer": "299,792,458 m/s",
-        "incorrect_answers": [
-            "150,000,000 m/s",
-            "30,000,000 m/s",
-            "3,000,000 m/s"
-        ]
-    },
-    {
-        "id": 72,
-        "question": "Is the Earth flat?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 73,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 74,
-        "question": "What is the capital of Japan?",
-        "type": "multiple",
-        "correct_answer": "Tokyo",
-        "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
-    },
-    {
-        "id": 75,
-        "question": "Is water wet?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ]
-    },
-    {
-        "id": 76,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ]
-    },
-    {
-        "id": 77,
-        "question": "What is the capital of Japan?",
-        "type": "multiple",
-        "correct_answer": "Tokyo",
-        "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
-    },
-    {
-        "id": 78,
-        "question": "Is the moon made of cheese?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 79,
-        "question": "What is the chemical symbol for gold?",
-        "type": "multiple",
-        "correct_answer": "Au",
-        "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
-    },
-    {
-        "id": 80,
-        "question": "Is water wet?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ]
-    },
-    {
-        "id": 81,
-        "question": "What is the chemical symbol for gold?",
-        "type": "multiple",
-        "correct_answer": "Au",
-        "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
-    },
-    {
-        "id": 82,
-        "question": "Is water wet?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ]
-    },
-    {
-        "id": 83,
-        "question": "What is the speed of light?",
-        "type": "multiple",
-        "correct_answer": "299,792,458 m/s",
-        "incorrect_answers": [
-            "150,000,000 m/s",
-            "30,000,000 m/s",
-            "3,000,000 m/s"
-        ]
-    },
-    {
-        "id": 84,
-        "question": "What is the largest planet in our Solar System?",
-        "type": "multiple",
-        "correct_answer": "Jupiter",
-        "incorrect_answers": [
-            "Saturn",
-            "Earth",
-            "Mars"
-        ]
-    },
-    {
-        "id": 85,
-        "question": "Is the moon made of cheese?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 86,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
-        "type": "multiple",
-        "correct_answer": "Harper Lee",
+        "correct_answer": "Herman Melville",
         "incorrect_answers": [
             "Mark Twain",
-            "J.K. Rowling",
+            "F. Scott Fitzgerald",
             "Ernest Hemingway"
-        ]
-    },
-    {
-        "id": 87,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ]
-    },
-    {
-        "id": 88,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 89,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ]
-    },
-    {
-        "id": 90,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 91,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 92,
-        "question": "Is fire hot?",
-        "type": "boolean",
-        "correct_answer": "True",
-        "incorrect_answers": [
-            "False"
-        ]
-    },
-    {
-        "id": 93,
-        "question": "What is the chemical symbol for gold?",
-        "type": "multiple",
-        "correct_answer": "Au",
-        "incorrect_answers": [
-            "Ag",
-            "Fe",
-            "Pb"
-        ]
-    },
-    {
-        "id": 94,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 95,
-        "question": "Who wrote 'To Kill a Mockingbird'?",
-        "type": "multiple",
-        "correct_answer": "Harper Lee",
-        "incorrect_answers": [
-            "Mark Twain",
-            "J.K. Rowling",
-            "Ernest Hemingway"
-        ]
-    },
-    {
-        "id": 96,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 97,
-        "question": "What is the capital of Japan?",
-        "type": "multiple",
-        "correct_answer": "Tokyo",
-        "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
-    },
-    {
-        "id": 98,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
-    },
-    {
-        "id": 99,
-        "question": "What is the capital of Japan?",
-        "type": "multiple",
-        "correct_answer": "Tokyo",
-        "incorrect_answers": [
-            "Osaka",
-            "Kyoto",
-            "Nagoya"
-        ]
-    },
-    {
-        "id": 100,
-        "question": "Can humans breathe underwater without any equipment?",
-        "type": "boolean",
-        "correct_answer": "False",
-        "incorrect_answers": [
-            "True"
-        ]
+        ],
+        "category": "Literature",
+        "difficulty": "medium"
     }
 ]
