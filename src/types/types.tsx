@@ -36,10 +36,12 @@ export interface ISelect {
   ) => void;
 }
 
-export interface Question {
+export interface IStructureOfQuestions {
   id: number;
   question: string;
   type: string;
   correct_answer: string;
   incorrect_answers: string[];
+  category: string;
+  difficulty: string;
 }

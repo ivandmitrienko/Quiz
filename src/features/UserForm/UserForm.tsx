@@ -7,8 +7,10 @@ import UserButtonGroup from '../UserButtons/UserButtonGroup';
 import numberQuestions from '../../assets/utilies/numberQuestions';
 import UserButton from '../UserButtons/TypeOfButton';
 import { IQuizConfigState } from '../../types/types';
-import UserSelect from './FormSelect';
+import UserSelect from './UserFormSelect';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';
+import { getQuestions } from './QuestionsSlice';
+import { useAppDispatch } from '../store';
 
 export default function UserForm() {
   const [config, setConfig] = useState<IQuizConfigState>({
@@ -18,6 +20,8 @@ export default function UserForm() {
     type: '',
     time: '1m',
   });
+
+  const dispatch = useAppDispatch();
 
   const [nameError, setNameError] = useState<boolean>(false);
 
@@ -40,6 +44,10 @@ export default function UserForm() {
     } else if (e.target instanceof HTMLInputElement) {
       setNameError(true);
     }
+  };
+
+  const handleClickStart = () => {
+    dispatch(getQuestions(config));
   };
 
   return (
@@ -107,7 +115,9 @@ export default function UserForm() {
         </Grid>
       </Grid>
       <UserButtonGroup>
-        <UserButton link='/test'>Start quiz</UserButton>
+        <UserButton link='/test' handleClick={handleClickStart}>
+          Start quiz
+        </UserButton>
         <UserButton link='/results'>See my stats</UserButton>
       </UserButtonGroup>
     </Box>
