@@ -12,7 +12,6 @@ import UserButtonGroup from '../UserButtons/UserButtonGroup';
 import UserButton from '../UserButtons/TypeOfButton';
 import UserTestModal from './UserTestModal';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';
-import { IStructureOfQuestions } from '../../types/types';
 import { questions } from '../../assets/server/Questions';
 
 export default function UserTest() {
@@ -21,8 +20,7 @@ export default function UserTest() {
   const [isTimerActive, setIsTimerActive] = useState(true);
   const [modal, setModal] = useState(false);
 
-  const currentQuestion: IStructureOfQuestions =
-    questions[currentQuestionIndex];
+  const currentQuestion = questions[currentQuestionIndex];
 
   const handleNextQuestion = useCallback(() => {
     if (currentQuestionIndex < questions.length - 1) {
