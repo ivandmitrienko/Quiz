@@ -9,7 +9,7 @@ import UserButton from '../UserButtons/TypeOfButton';
 import { IQuizConfigState } from '../../types/types';
 import UserSelect from './UserFormSelect';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';
-import { getQuestions } from './QuestionsSlice';
+import { createSliceQuestions } from './QuestionsSlice';
 import { useAppDispatch } from '../store';
 
 export default function UserForm() {
@@ -47,7 +47,7 @@ export default function UserForm() {
   };
 
   const handleClickStart = () => {
-    dispatch(getQuestions(config));
+    dispatch(createSliceQuestions(config));
   };
 
   return (

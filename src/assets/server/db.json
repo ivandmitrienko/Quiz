@@ -1247,6 +1247,28 @@
             ],
             "category": "Geography",
             "difficulty": "easy"
+        },
+        {
+            "id": 101,
+            "question": "Is the boiling point of water 100 degrees Celsius?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 102,
+            "question": "Is the boiling point of water 100 degrees Celsius?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
         }
     ]
 }
