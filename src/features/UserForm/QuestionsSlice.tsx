@@ -6,13 +6,19 @@ const initialState: IQuizConfigState[] = [];
 export const createSliceQuestions = createAsyncThunk(
   '@@questions/createQuestions',
   async (config: IQuizConfigState, { dispatch }) => {
-    const { difficulty, type, category } = config;
+    const { difficulty, type, category, quantityOfQuestions } = config;
     const res = await fetch(
-      `http://localhost:3000/questions?category=${category}&type=${type}&difficulty=${difficulty}`,
+      `http://localhost:3000/questions/${type}/${category}`,
     );
     const data = await res.json();
 
+    /*here use filter method because json-server doesn't support multiple filter*/
     console.log(data);
+    const questions = data.filter(
+      (e: IQuizConfigState) => e.difficulty === difficulty,
+    );
+
+    console.log(questions);
   },
 );
 

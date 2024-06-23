@@ -14,7 +14,7 @@ import { useAppDispatch } from '../store';
 
 export default function UserForm() {
   const [config, setConfig] = useState<IQuizConfigState>({
-    numberOfQuestions: 5,
+    quantityOfQuestions: 5,
     category: 'Literature',
     difficulty: 'easy',
     type: 'multiple',
@@ -66,8 +66,8 @@ export default function UserForm() {
             label='number questions'
             type='number'
             inputProps={{ min, max }}
-            value={Number(config.numberOfQuestions)}
-            name='numberOfQuestions'
+            value={Number(config.quantityOfQuestions)}
+            name='quantityOfQuestions'
             error={nameError}
             helperText={nameError ? 'Please enter number from 5 to 15' : ''}
             onChange={handleChange}

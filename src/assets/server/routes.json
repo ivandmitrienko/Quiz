@@ -1,0 +1,4 @@
+{
+    "/api/v1/*": "/$1",
+    "/questions/:type/:category": "/questions?type=:type&category=:category"
+}

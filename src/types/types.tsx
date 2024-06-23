@@ -17,7 +17,7 @@ export interface IModal {
 }
 
 export interface IQuizConfigState {
-  numberOfQuestions: number;
+  quantityOfQuestions: number;
   category: string;
   difficulty: string;
   type: string;

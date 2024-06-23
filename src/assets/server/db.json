@@ -1907,6 +1907,526 @@
             ],
             "category": "Geography",
             "difficulty": "easy"
+        },
+        {
+            "id": 161,
+            "question": "Who wrote the novel 'Dracula'?",
+            "type": "multiple",
+            "correct_answer": "Bram Stoker",
+            "incorrect_answers": [
+                "Mary Shelley",
+                "Emily Bronte",
+                "H.G. Wells"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 162,
+            "question": "Who wrote the novel 'To Kill a Mockingbird'?",
+            "type": "multiple",
+            "correct_answer": "Harper Lee",
+            "incorrect_answers": [
+                "Mark Twain",
+                "John Steinbeck",
+                "Ernest Hemingway"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 163,
+            "question": "Who wrote the novel 'The Picture of Dorian Gray'?",
+            "type": "multiple",
+            "correct_answer": "Oscar Wilde",
+            "incorrect_answers": [
+                "Charles Dickens",
+                "Thomas Hardy",
+                "George Eliot"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 164,
+            "question": "Who wrote the book 'The Hitchhiker's Guide to the Galaxy'?",
+            "type": "multiple",
+            "correct_answer": "Douglas Adams",
+            "incorrect_answers": [
+                "Isaac Asimov",
+                "Arthur C. Clarke",
+                "Philip K. Dick"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 165,
+            "question": "Who wrote the novel 'Pride and Prejudice'?",
+            "type": "multiple",
+            "correct_answer": "Jane Austen",
+            "incorrect_answers": [
+                "Charlotte Bronte",
+                "Emily Bronte",
+                "Virginia Woolf"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 166,
+            "question": "Who wrote the book 'The Lord of the Rings'?",
+            "type": "multiple",
+            "correct_answer": "J.R.R. Tolkien",
+            "incorrect_answers": [
+                "J.K. Rowling",
+                "George R.R. Martin",
+                "C.S. Lewis"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 167,
+            "question": "Who wrote the series 'The Chronicles of Narnia'?",
+            "type": "multiple",
+            "correct_answer": "C.S. Lewis",
+            "incorrect_answers": [
+                "J.R.R. Tolkien",
+                "Philip Pullman",
+                "George Orwell"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 168,
+            "question": "Who wrote the novel 'Les Misérables'?",
+            "type": "multiple",
+            "correct_answer": "Victor Hugo",
+            "incorrect_answers": [
+                "Leo Tolstoy",
+                "Charles Dickens",
+                "Fyodor Dostoevsky"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 169,
+            "question": "Who wrote the novel 'Alice's Adventures in Wonderland'?",
+            "type": "multiple",
+            "correct_answer": "Lewis Carroll",
+            "incorrect_answers": [
+                "J.M. Barrie",
+                "Kenneth Grahame",
+                "E.B. White"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 170,
+            "question": "Who wrote the novel 'One Hundred Years of Solitude'?",
+            "type": "multiple",
+            "correct_answer": "Gabriel García Márquez",
+            "incorrect_answers": [
+                "Mario Vargas Llosa",
+                "Isabel Allende",
+                "Julio Cortázar"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 171,
+            "question": "Who wrote the novel '1984'?",
+            "type": "multiple",
+            "correct_answer": "George Orwell",
+            "incorrect_answers": [
+                "Aldous Huxley",
+                "Ray Bradbury",
+                "Margaret Atwood"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 172,
+            "question": "Who wrote the novel 'The Great Gatsby'?",
+            "type": "multiple",
+            "correct_answer": "F. Scott Fitzgerald",
+            "incorrect_answers": [
+                "Ernest Hemingway",
+                "John Steinbeck",
+                "Sinclair Lewis"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 173,
+            "question": "Who wrote the play 'Romeo and Juliet'?",
+            "type": "multiple",
+            "correct_answer": "William Shakespeare",
+            "incorrect_answers": [
+                "Anton Chekhov",
+                "Oscar Wilde",
+                "Arthur Miller"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 174,
+            "question": "Who wrote the novel 'The Catcher in the Rye'?",
+            "type": "multiple",
+            "correct_answer": "J.D. Salinger",
+            "incorrect_answers": [
+                "F. Scott Fitzgerald",
+                "Mark Twain",
+                "Herman Melville"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 175,
+            "question": "Who wrote the novel 'Frankenstein'?",
+            "type": "multiple",
+            "correct_answer": "Mary Shelley",
+            "incorrect_answers": [
+                "Emily Bronte",
+                "Charlotte Bronte",
+                "Jane Austen"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 176,
+            "question": "Who wrote the play 'Hamlet'?",
+            "type": "multiple",
+            "correct_answer": "William Shakespeare",
+            "incorrect_answers": [
+                "George Bernard Shaw",
+                "Arthur Miller",
+                "Henrik Ibsen"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 177,
+            "question": "Who wrote the novel 'War and Peace'?",
+            "type": "multiple",
+            "correct_answer": "Leo Tolstoy",
+            "incorrect_answers": [
+                "Fyodor Dostoevsky",
+                "Anton Chekhov",
+                "Nikolai Gogol"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 178,
+            "question": "Who wrote the novel 'The Hobbit'?",
+            "type": "multiple",
+            "correct_answer": "J.R.R. Tolkien",
+            "incorrect_answers": [
+                "C.S. Lewis",
+                "J.K. Rowling",
+                "George R.R. Martin"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 179,
+            "question": "Who wrote the novel 'Moby Dick'?",
+            "type": "multiple",
+            "correct_answer": "Herman Melville",
+            "incorrect_answers": [
+                "Nathaniel Hawthorne",
+                "Edgar Allan Poe",
+                "Washington Irving"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 180,
+            "question": "Who wrote the novel 'Alice's Adventures in Wonderland'?",
+            "type": "multiple",
+            "correct_answer": "Lewis Carroll",
+            "incorrect_answers": [
+                "J.M. Barrie",
+                "Kenneth Grahame",
+                "E.B. White"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 181,
+            "question": "Who wrote the novel '1984'?",
+            "type": "multiple",
+            "correct_answer": "George Orwell",
+            "incorrect_answers": [
+                "Aldous Huxley",
+                "Ray Bradbury",
+                "Margaret Atwood"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 182,
+            "question": "Who wrote the novel 'The Great Gatsby'?",
+            "type": "multiple",
+            "correct_answer": "F. Scott Fitzgerald",
+            "incorrect_answers": [
+                "Ernest Hemingway",
+                "John Steinbeck",
+                "Sinclair Lewis"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 183,
+            "question": "Who wrote the play 'Romeo and Juliet'?",
+            "type": "multiple",
+            "correct_answer": "William Shakespeare",
+            "incorrect_answers": [
+                "Anton Chekhov",
+                "Oscar Wilde",
+                "Arthur Miller"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 184,
+            "question": "Who wrote the novel 'The Catcher in the Rye'?",
+            "type": "multiple",
+            "correct_answer": "J.D. Salinger",
+            "incorrect_answers": [
+                "F. Scott Fitzgerald",
+                "Mark Twain",
+                "Herman Melville"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 185,
+            "question": "Who wrote the novel 'Frankenstein'?",
+            "type": "multiple",
+            "correct_answer": "Mary Shelley",
+            "incorrect_answers": [
+                "Emily Bronte",
+                "Charlotte Bronte",
+                "Jane Austen"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 186,
+            "question": "Who wrote the play 'Hamlet'?",
+            "type": "multiple",
+            "correct_answer": "William Shakespeare",
+            "incorrect_answers": [
+                "George Bernard Shaw",
+                "Arthur Miller",
+                "Henrik Ibsen"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 187,
+            "question": "Who wrote the novel 'War and Peace'?",
+            "type": "multiple",
+            "correct_answer": "Leo Tolstoy",
+            "incorrect_answers": [
+                "Fyodor Dostoevsky",
+                "Anton Chekhov",
+                "Nikolai Gogol"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 188,
+            "question": "Who wrote the novel 'The Hobbit'?",
+            "type": "multiple",
+            "correct_answer": "J.R.R. Tolkien",
+            "incorrect_answers": [
+                "C.S. Lewis",
+                "J.K. Rowling",
+                "George R.R. Martin"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 189,
+            "question": "Who wrote the novel 'Moby Dick'?",
+            "type": "multiple",
+            "correct_answer": "Herman Melville",
+            "incorrect_answers": [
+                "Nathaniel Hawthorne",
+                "Edgar Allan Poe",
+                "Washington Irving"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 190,
+            "question": "Who wrote the novel 'Alice's Adventures in Wonderland'?",
+            "type": "multiple",
+            "correct_answer": "Lewis Carroll",
+            "incorrect_answers": [
+                "J.M. Barrie",
+                "Kenneth Grahame",
+                "E.B. White"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 191,
+            "question": "Who wrote the novel '1984'?",
+            "type": "multiple",
+            "correct_answer": "George Orwell",
+            "incorrect_answers": [
+                "Aldous Huxley",
+                "Ray Bradbury",
+                "Margaret Atwood"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 192,
+            "question": "Who wrote the novel 'The Great Gatsby'?",
+            "type": "multiple",
+            "correct_answer": "F. Scott Fitzgerald",
+            "incorrect_answers": [
+                "Ernest Hemingway",
+                "John Steinbeck",
+                "Sinclair Lewis"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 193,
+            "question": "Who wrote the play 'Romeo and Juliet'?",
+            "type": "multiple",
+            "correct_answer": "William Shakespeare",
+            "incorrect_answers": [
+                "Anton Chekhov",
+                "Oscar Wilde",
+                "Arthur Miller"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 194,
+            "question": "Who wrote the novel 'The Catcher in the Rye'?",
+            "type": "multiple",
+            "correct_answer": "J.D. Salinger",
+            "incorrect_answers": [
+                "F. Scott Fitzgerald",
+                "Mark Twain",
+                "Herman Melville"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 195,
+            "question": "Who wrote the novel 'Frankenstein'?",
+            "type": "multiple",
+            "correct_answer": "Mary Shelley",
+            "incorrect_answers": [
+                "Emily Bronte",
+                "Charlotte Bronte",
+                "Jane Austen"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 196,
+            "question": "Who wrote the play 'Hamlet'?",
+            "type": "multiple",
+            "correct_answer": "William Shakespeare",
+            "incorrect_answers": [
+                "George Bernard Shaw",
+                "Arthur Miller",
+                "Henrik Ibsen"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 197,
+            "question": "Who wrote the novel 'War and Peace'?",
+            "type": "multiple",
+            "correct_answer": "Leo Tolstoy",
+            "incorrect_answers": [
+                "Fyodor Dostoevsky",
+                "Anton Chekhov",
+                "Nikolai Gogol"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 198,
+            "question": "Who wrote the novel 'The Hobbit'?",
+            "type": "multiple",
+            "correct_answer": "J.R.R. Tolkien",
+            "incorrect_answers": [
+                "C.S. Lewis",
+                "J.K. Rowling",
+                "George R.R. Martin"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 199,
+            "question": "Who wrote the novel 'Moby Dick'?",
+            "type": "multiple",
+            "correct_answer": "Herman Melville",
+            "incorrect_answers": [
+                "Nathaniel Hawthorne",
+                "Edgar Allan Poe",
+                "Washington Irving"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 200,
+            "question": "Who wrote the novel 'Alice's Adventures in Wonderland'?",
+            "type": "multiple",
+            "correct_answer": "Lewis Carroll",
+            "incorrect_answers": [
+                "J.M. Barrie",
+                "Kenneth Grahame",
+                "E.B. White"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
         }
     ]
 }
