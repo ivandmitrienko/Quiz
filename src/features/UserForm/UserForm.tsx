@@ -15,9 +15,9 @@ import { useAppDispatch } from '../store';
 export default function UserForm() {
   const [config, setConfig] = useState<IQuizConfigState>({
     numberOfQuestions: 5,
-    category: '',
-    difficulty: '',
-    type: '',
+    category: 'Literature',
+    difficulty: 'easy',
+    type: 'multiple',
     time: '1m',
   });
 
