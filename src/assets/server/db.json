@@ -1261,13 +1261,651 @@
         },
         {
             "id": 102,
-            "question": "Is the boiling point of water 100 degrees Celsius?",
+            "question": "Is the sun a star?",
             "type": "boolean",
             "correct_answer": "True",
             "incorrect_answers": [
                 "False"
             ],
             "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 103,
+            "question": "Is the speed of light approximately 300,000 kilometers per second?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 104,
+            "question": "Is Tokyo the capital of Japan?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 105,
+            "question": "Does the chemical formula H2O represent water?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 106,
+            "question": "Is the Great Wall of China visible from space with the naked eye?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "medium"
+        },
+        {
+            "id": 107,
+            "question": "Is the chemical symbol for sodium Na?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 108,
+            "question": "Is the longest river in the world the Amazon?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "medium"
+        },
+        {
+            "id": 109,
+            "question": "Is the planet Mars known as the Red Planet?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 110,
+            "question": "Is a group of lions known as a pride?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 111,
+            "question": "Is the chemical symbol for potassium K?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 112,
+            "question": "Is Mount Kilimanjaro located in Kenya?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "medium"
+        },
+        {
+            "id": 113,
+            "question": "Is the capital of Australia Sydney?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 114,
+            "question": "Is the chemical symbol for gold Au?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 115,
+            "question": "Is the book '1984' written by George Orwell?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 116,
+            "question": "Is the capital of Canada Toronto?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 117,
+            "question": "Is the speed of sound faster than the speed of light?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 118,
+            "question": "Is the Sahara the largest desert in the world?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "medium"
+        },
+        {
+            "id": 119,
+            "question": "Is the book 'Moby Dick' authored by Herman Melville?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 120,
+            "question": "Is the chemical formula for table salt NaCl?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 121,
+            "question": "Is the capital of Italy Rome?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 122,
+            "question": "Is the author of 'To Kill a Mockingbird' Harper Lee?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 123,
+            "question": "Is the boiling point of water 90 degrees Celsius?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 124,
+            "question": "Is the largest planet in our solar system Jupiter?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 125,
+            "question": "Is the novel 'Pride and Prejudice' written by Emily Bronte?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 126,
+            "question": "Is the Eiffel Tower located in Berlin?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 127,
+            "question": "Is the atomic number of carbon 12?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 128,
+            "question": "Is the book 'The Catcher in the Rye' written by J.D. Salinger?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 129,
+            "question": "Is the capital of Brazil Rio de Janeiro?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "medium"
+        },
+        {
+            "id": 130,
+            "question": "Is the chemical symbol for iron Fe?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 131,
+            "question": "Is the book 'War and Peace' written by Fyodor Dostoevsky?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 132,
+            "question": "Is the chemical symbol for helium He?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 133,
+            "question": "Is the capital of Spain Madrid?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 134,
+            "question": "Is the book 'The Great Gatsby' written by F. Scott Fitzgerald?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 135,
+            "question": "Is the molecular formula for glucose C6H12O6?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 136,
+            "question": "Is the capital of Egypt Cairo?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 137,
+            "question": "Is the author of 'The Brothers Karamazov' Leo Tolstoy?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 138,
+            "question": "Is the speed of light slower than the speed of sound?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 139,
+            "question": "Is the capital of Germany Berlin?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 140,
+            "question": "Is the book 'Crime and Punishment' authored by Fyodor Dostoevsky?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 141,
+            "question": "Is the molecular formula for water H2O?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 142,
+            "question": "Is the capital of the United States New York?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 143,
+            "question": "Is the author of '1984' George Orwell?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 144,
+            "question": "Is the chemical formula for carbon dioxide CO2?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 145,
+            "question": "Is the capital of Russia Moscow?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 146,
+            "question": "Is the author of 'The Odyssey' Homer?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 147,
+            "question": "Is the atomic number of oxygen 8?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 148,
+            "question": "Is the capital of France Madrid?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 149,
+            "question": "Is the author of 'Brave New World' Aldous Huxley?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 150,
+            "question": "Is the chemical formula for methane CH4?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "easy"
+        },
+        {
+            "id": 151,
+            "question": "Is the capital of India Mumbai?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 152,
+            "question": "Is the author of 'Jane Eyre' Charlotte Bronte?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "medium"
+        },
+        {
+            "id": 153,
+            "question": "Is the atomic number of hydrogen 2?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 154,
+            "question": "Is the capital of Mexico Mexico City?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 155,
+            "question": "Is the author of 'The Hobbit' J.R.R. Tolkien?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 156,
+            "question": "Is the atomic number of nitrogen 7?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 157,
+            "question": "Is the capital of South Korea Seoul?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "easy"
+        },
+        {
+            "id": 158,
+            "question": "Is the author of 'Frankenstein' Mary Shelley?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Literature",
+            "difficulty": "easy"
+        },
+        {
+            "id": 159,
+            "question": "Is the chemical formula for ethanol C2H5OH?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "medium"
+        },
+        {
+            "id": 160,
+            "question": "Is the capital of Argentina Buenos Aires?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
             "difficulty": "easy"
         }
     ]
