@@ -3,8 +3,7 @@ import { IQuizConfigState, IStructureOfQuestions } from '../../types/types';
 
 export const createSliceQuestions = createAsyncThunk(
   '@@questions/createQuestions',
-  async (config: IQuizConfigState, { dispatch }) => {
-    dispatch(saveStructureTest(config));
+  async (config: IQuizConfigState) => {
     const { difficulty, type, category, quantityOfQuestions } = config;
     const res = await fetch(
       `http://localhost:3000/questions/${type}/${category}`,
