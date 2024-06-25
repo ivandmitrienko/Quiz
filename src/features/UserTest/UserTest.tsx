@@ -12,15 +12,19 @@ import UserButtonGroup from '../UserButtons/UserButtonGroup';
 import UserButton from '../UserButtons/TypeOfButton';
 import UserTestModal from './UserTestModal';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';
-import { questions } from '../../assets/server/Questions';
+import { useSelector } from 'react-redux';
+import { IState } from '../../types/types';
 
 export default function UserTest() {
+  const questions = useSelector((state: IState) => state.dataForTest);
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [timer, setTimer] = useState(60); // Default 60 seconds
   const [isTimerActive, setIsTimerActive] = useState(true);
   const [modal, setModal] = useState(false);
 
   const currentQuestion = questions[currentQuestionIndex];
+  console.log(currentQuestion);
 
   const handleNextQuestion = useCallback(() => {
     if (currentQuestionIndex < questions.length - 1) {

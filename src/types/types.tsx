@@ -45,3 +45,8 @@ export interface IStructureOfQuestions {
   category: string;
   difficulty: string;
 }
+
+export interface IState {
+  confiqTest: IQuizConfigState;
+  dataForTest: IStructureOfQuestions[];
+}
