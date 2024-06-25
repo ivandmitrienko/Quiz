@@ -10,7 +10,7 @@ export const createSliceQuestions = createAsyncThunk(
     );
     const data: IStructureOfQuestions[] = await res.json();
 
-    /*here use filter  and slice methods because json-server doesn't support multiple filter*/
+    /*here use filter  and slice methods because this version of json-server doesn't support multiple filter*/
     const questions = data
       .filter((e) => e.difficulty === difficulty)
       .slice(0, quantityOfQuestions);
@@ -20,7 +20,7 @@ export const createSliceQuestions = createAsyncThunk(
 );
 
 const initialState = {
-  confiqTest: [] as IQuizConfigState[],
+  confiqTest: {} as IQuizConfigState,
   dataForTest: [] as IStructureOfQuestions[],
 };
 
@@ -29,7 +29,7 @@ const questionsSlice = createSlice({
   initialState,
   reducers: {
     saveStructureTest: (state, action: PayloadAction<IQuizConfigState>) => {
-      state.confiqTest.push(action.payload);
+      state.confiqTest = action.payload;
     },
   },
   extraReducers: (builder) => {
