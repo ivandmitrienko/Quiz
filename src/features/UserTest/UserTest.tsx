@@ -17,9 +17,10 @@ import { IState } from '../../types/types';
 
 export default function UserTest() {
   const questions = useSelector((state: IState) => state.dataForTest);
+  const timeForTest = useSelector((state: IState) => state.confiqTest.time);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [timer, setTimer] = useState(60); // Default 60 seconds
+  const [totalTime, setTotalTime] = useState(parseInt(timeForTest) * 60);
   const [isTimerActive, setIsTimerActive] = useState(true);
   const [modal, setModal] = useState(false);
 
@@ -29,25 +30,25 @@ export default function UserTest() {
   const handleNextQuestion = useCallback(() => {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setTimer(60); // Reset timer for next question
     } else {
       // Handle end of quiz
       setIsTimerActive(false);
       alert('Quiz finished!');
     }
-  }, [currentQuestionIndex]);
+  }, [currentQuestionIndex, questions.length]);
 
   useEffect(() => {
     let timerInterval: NodeJS.Timeout;
-    if (isTimerActive && timer > 0) {
+    if (isTimerActive && totalTime > 0) {
       timerInterval = setInterval(() => {
-        setTimer((prevTimer) => prevTimer - 1);
+        setTotalTime((prevTotalTime) => prevTotalTime - 1);
       }, 1000);
-    } else if (timer === 0) {
-      handleNextQuestion();
+    } else if (totalTime === 0) {
+      setIsTimerActive(false);
+      alert('Time is up! Quiz finished!');
     }
     return () => clearInterval(timerInterval);
-  }, [timer, isTimerActive, handleNextQuestion]);
+  }, [totalTime, isTimerActive]);
 
   const handleAnswer = (answer: string) => {
     if (answer === currentQuestion.correct_answer) {
@@ -75,17 +76,13 @@ export default function UserTest() {
           Question {currentQuestionIndex + 1} of {questions.length}
         </Typography>
         <Typography variant='body1' gutterBottom>
-          Time remaining: {timer}s
+          Time remaining: {Math.floor(totalTime / 60)}m {totalTime % 60}s
         </Typography>
       </Box>
       <Box component='section' sx={{ p: 2, border: '1px solid grey' }}>
         <Typography variant='h6' gutterBottom>
           {currentQuestion.question}
         </Typography>
-        {/* <UserButtonGroup>
-          <UserButton>True</UserButton>
-          <UserButton>False</UserButton>
-        </UserButtonGroup> */}
         <Grid container spacing={2} sx={{ my: 2 }}>
           {currentQuestion.type === 'multiple' ? (
             currentQuestion.incorrect_answers
