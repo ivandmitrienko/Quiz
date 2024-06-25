@@ -14,38 +14,34 @@ import UserButtonGroup from '../UserButtons/UserButtonGroup';
 import UserButton from '../UserButtons/TypeOfButton';
 import UserTestModal from './UserTestModal';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';
-import { RootState, useAppDispatch } from '../store/store';
+import { useAppDispatch } from '../store/store';
 import { addCorrectAnswer } from '../store/ResultSlice';
+import { confiqTest, questionsTest } from '../store/selectors';
 
 export default function UserTest() {
-  const questions = useSelector(
-    (state: RootState) => state.questions.dataForTest,
-  );
-
-  const timeForTest = useSelector(
-    (state: RootState) => state.questions.confiqTest.time,
-  );
-
   const dispatch = useAppDispatch();
 
   const navigate = useNavigate();
 
+  const confiqForTest = useSelector(confiqTest);
+  const questionsForTest = useSelector(questionsTest);
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [totalTime, setTotalTime] = useState(parseInt(timeForTest) * 60);
+  const [totalTime, setTotalTime] = useState(parseInt(confiqForTest.time) * 60);
   const [isTimerActive, setIsTimerActive] = useState(true);
   const [modal, setModal] = useState(false);
 
-  const currentQuestion = questions[currentQuestionIndex];
+  const currentQuestion = questionsForTest[currentQuestionIndex];
 
   const handleNextQuestion = useCallback(() => {
-    if (currentQuestionIndex < questions.length - 1) {
+    if (currentQuestionIndex < questionsForTest.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
       // Handle end of quiz
       setIsTimerActive(false);
       navigate('/results');
     }
-  }, [currentQuestionIndex, questions.length]);
+  }, [currentQuestionIndex, questionsForTest.length]);
 
   useEffect(() => {
     let timerInterval: NodeJS.Timeout;
@@ -78,12 +74,12 @@ export default function UserTest() {
       <TitleOfPage>Quiz test</TitleOfPage>
       <LinearProgress
         variant='determinate'
-        value={((currentQuestionIndex + 1) / questions.length) * 100}
+        value={((currentQuestionIndex + 1) / questionsForTest.length) * 100}
         sx={{ my: 2 }}
       />
       <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
         <Typography variant='body1' gutterBottom>
-          Question {currentQuestionIndex + 1} of {questions.length}
+          Question {currentQuestionIndex + 1} of {questionsForTest.length}
         </Typography>
         <Typography variant='body1' gutterBottom>
           Time remaining: {Math.floor(totalTime / 60)}m {totalTime % 60}s
