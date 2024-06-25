@@ -1,11 +1,16 @@
+import { useSelector } from 'react-redux';
+
 import { Box, Container, Grid } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 
 import UserButton from '../../features/UserButtons/TypeOfButton';
-// import { BASE_URL } from '../UserLocalRouter/routes';
+import { RootState } from '../store/store';
 
 export default function UserResult() {
+  const answers = useSelector(
+    (state: RootState) => state.answers.answers.length,
+  );
   const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(1),
     textAlign: 'center',
@@ -37,7 +42,7 @@ export default function UserResult() {
       >
         <Grid container columnSpacing={1}>
           <Grid item xs={4}>
-            <Item>You answered 5 out of 10 questions correctly</Item>
+            <Item>You answered {answers} out of 10 questions correctly</Item>
           </Grid>
           <Grid item xs={4}>
             <Item>Конфигурация теста, тип, категория, время и сложность</Item>

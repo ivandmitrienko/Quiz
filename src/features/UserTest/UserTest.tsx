@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import {
   Box,
@@ -12,12 +14,21 @@ import UserButtonGroup from '../UserButtons/UserButtonGroup';
 import UserButton from '../UserButtons/TypeOfButton';
 import UserTestModal from './UserTestModal';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';
-import { useSelector } from 'react-redux';
-import { IState } from '../../types/types';
+import { RootState, useAppDispatch } from '../store/store';
+import { addCorrectAnswer } from '../store/ResultSlice';
 
 export default function UserTest() {
-  const questions = useSelector((state: IState) => state.dataForTest);
-  const timeForTest = useSelector((state: IState) => state.confiqTest.time);
+  const questions = useSelector(
+    (state: RootState) => state.questions.dataForTest,
+  );
+
+  const timeForTest = useSelector(
+    (state: RootState) => state.questions.confiqTest.time,
+  );
+
+  const dispatch = useAppDispatch();
+
+  const navigate = useNavigate();
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [totalTime, setTotalTime] = useState(parseInt(timeForTest) * 60);
@@ -25,7 +36,6 @@ export default function UserTest() {
   const [modal, setModal] = useState(false);
 
   const currentQuestion = questions[currentQuestionIndex];
-  console.log(currentQuestion);
 
   const handleNextQuestion = useCallback(() => {
     if (currentQuestionIndex < questions.length - 1) {
@@ -33,7 +43,7 @@ export default function UserTest() {
     } else {
       // Handle end of quiz
       setIsTimerActive(false);
-      alert('Quiz finished!');
+      navigate('/results');
     }
   }, [currentQuestionIndex, questions.length]);
 
@@ -45,14 +55,14 @@ export default function UserTest() {
       }, 1000);
     } else if (totalTime === 0) {
       setIsTimerActive(false);
-      alert('Time is up! Quiz finished!');
+      navigate('/results');
     }
     return () => clearInterval(timerInterval);
   }, [totalTime, isTimerActive]);
 
   const handleAnswer = (answer: string) => {
     if (answer === currentQuestion.correct_answer) {
-      console.log('Correct!');
+      dispatch(addCorrectAnswer(currentQuestion.correct_answer));
     } else {
       console.log('Incorrect!');
     }
@@ -119,7 +129,6 @@ export default function UserTest() {
           margin: '20px 20px',
         }}
       >
-        {/* <UserTimer /> */}
         <UserButtonGroup>
           <UserButton handleClick={handleModal}>End quiz</UserButton>
         </UserButtonGroup>

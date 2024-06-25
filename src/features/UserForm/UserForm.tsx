@@ -9,8 +9,11 @@ import UserButton from '../UserButtons/TypeOfButton';
 import { IQuizConfigState } from '../../types/types';
 import UserSelect from './UserFormSelect';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';
-import { createSliceQuestions, saveStructureTest } from './QuestionsSlice';
-import { useAppDispatch } from '../store';
+import {
+  createSliceQuestions,
+  saveStructureTest,
+} from '../store/QuestionsSlice';
+import { useAppDispatch } from '../store/store';
 
 export default function UserForm() {
   const [config, setConfig] = useState<IQuizConfigState>({

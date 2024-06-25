@@ -1,9 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { questionsReducer } from './UserForm/QuestionsSlice';
+import { questionsReducer } from './QuestionsSlice';
 import { useDispatch } from 'react-redux';
+import { resultReducer } from './ResultSlice';
 
 export const store = configureStore({
-  reducer: questionsReducer,
+  reducer: {
+    questions: questionsReducer,
+    answers: resultReducer,
+  },
   devTools: true,
 });
 
