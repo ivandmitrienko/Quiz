@@ -1,6 +1,7 @@
-import { Box, Container } from '@mui/material';
 import { Suspense, lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
+
+import LoadingContent from '../loadingContent/LoadingContent';
 
 const Layout = lazy(() => import('../Layout'));
 const UserForm = lazy(() => import('../UserForm/UserForm'));
@@ -12,24 +13,7 @@ export const router = createBrowserRouter([
   {
     path: '/',
     element: (
-      <Suspense
-        fallback={
-          <Container fixed>
-            <Box
-              sx={{
-                bgcolor: 'white',
-                height: '100vh',
-                padding: '20px 10px',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-            >
-              🌀 Loading...
-            </Box>
-          </Container>
-        }
-      >
+      <Suspense fallback={<LoadingContent />}>
         <Layout />
       </Suspense>
     ),

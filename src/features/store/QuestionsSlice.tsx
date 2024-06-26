@@ -26,6 +26,7 @@ export const createSliceQuestions = createAsyncThunk(
 const initialState: IState = {
   configTest: {} as IQuizConfigState,
   dataForTest: [],
+  loading: '',
 };
 
 const questionsSlice = createSlice({
@@ -40,9 +41,14 @@ const questionsSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(createSliceQuestions.fulfilled, (state, action) => {
-      state.dataForTest = action.payload;
-    });
+    builder
+      .addCase(createSliceQuestions.pending, (state) => {
+        state.loading = 'loading';
+      })
+      .addCase(createSliceQuestions.fulfilled, (state, action) => {
+        state.dataForTest = action.payload;
+        state.loading = 'idle';
+      });
   },
 });
 

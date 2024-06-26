@@ -19,11 +19,13 @@ import {
   addCorrectAnswer,
   addTimeSpentOnQuestions,
 } from '../store/ResultSlice';
-import { configTest, questionsTest } from '../store/selectors';
+import { configTest, loading, questionsTest } from '../store/selectors';
+import LoadingContent from '../loadingContent/LoadingContent';
 
 export default function UserTest() {
   const configForTest = useSelector(configTest);
   const questionsForTest = useSelector(questionsTest);
+  const serverLoading = useSelector(loading);
 
   const dispatch = useAppDispatch();
 
@@ -76,66 +78,71 @@ export default function UserTest() {
   };
 
   return (
-    <Container>
-      <TitleOfPage>Quiz test</TitleOfPage>
-      <LinearProgress
-        variant='determinate'
-        value={((currentQuestionIndex + 1) / questionsForTest.length) * 100}
-        sx={{ my: 2 }}
-      />
-      <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
-        <Typography variant='body1' gutterBottom>
-          Question {currentQuestionIndex + 1} of {questionsForTest.length}
-        </Typography>
-        <Typography variant='body1' gutterBottom>
-          Time remaining: {Math.floor(totalTime / 60)}m {totalTime % 60}s
-        </Typography>
-      </Box>
-      <Box component='section' sx={{ p: 2, border: '1px solid grey' }}>
-        <Typography variant='h6' gutterBottom>
-          {currentQuestion.question}
-        </Typography>
-        <Grid container spacing={2} sx={{ my: 2 }}>
-          {currentQuestion.type === 'multiple' ? (
-            currentQuestion.incorrect_answers
-              .concat(currentQuestion.correct_answer)
-              .sort()
-              .map((answer) => (
-                <Grid item xs={12} sm={6} key={answer}>
-                  <UserButton handleClick={() => handleAnswer(answer)}>
-                    {answer}
-                  </UserButton>
-                </Grid>
-              ))
-          ) : (
-            <>
-              <Grid item xs={6}>
-                <UserButton handleClick={() => handleAnswer('True')}>
-                  True
-                </UserButton>
-              </Grid>
-              <Grid item xs={6}>
-                <UserButton handleClick={() => handleAnswer('False')}>
-                  False
-                </UserButton>
-              </Grid>
-            </>
-          )}
-        </Grid>
-      </Box>
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'space-evenly',
-          alignItems: 'center',
-          margin: '20px 20px',
-        }}
-      >
-        <UserButtonGroup>
-          <UserButton handleClick={handleModal}>End quiz</UserButton>
-        </UserButtonGroup>
-      </Box>
-      <UserTestModal modal={modal} handleClick={handleModal} />
-    </Container>
+    <>
+      {serverLoading === 'loading' && <LoadingContent />}
+      {serverLoading === 'idle' && (
+        <Container>
+          <TitleOfPage>Quiz test</TitleOfPage>
+          <LinearProgress
+            variant='determinate'
+            value={((currentQuestionIndex + 1) / questionsForTest.length) * 100}
+            sx={{ my: 2 }}
+          />
+          <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
+            <Typography variant='body1' gutterBottom>
+              Question {currentQuestionIndex + 1} of {questionsForTest.length}
+            </Typography>
+            <Typography variant='body1' gutterBottom>
+              Time remaining: {Math.floor(totalTime / 60)}m {totalTime % 60}s
+            </Typography>
+          </Box>
+          <Box component='section' sx={{ p: 2, border: '1px solid grey' }}>
+            <Typography variant='h6' gutterBottom>
+              {currentQuestion.question}
+            </Typography>
+            <Grid container spacing={2} sx={{ my: 2 }}>
+              {currentQuestion.type === 'multiple' ? (
+                currentQuestion.incorrect_answers
+                  .concat(currentQuestion.correct_answer)
+                  .sort()
+                  .map((answer) => (
+                    <Grid item xs={12} sm={6} key={answer}>
+                      <UserButton handleClick={() => handleAnswer(answer)}>
+                        {answer}
+                      </UserButton>
+                    </Grid>
+                  ))
+              ) : (
+                <>
+                  <Grid item xs={6}>
+                    <UserButton handleClick={() => handleAnswer('True')}>
+                      True
+                    </UserButton>
+                  </Grid>
+                  <Grid item xs={6}>
+                    <UserButton handleClick={() => handleAnswer('False')}>
+                      False
+                    </UserButton>
+                  </Grid>
+                </>
+              )}
+            </Grid>
+          </Box>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-evenly',
+              alignItems: 'center',
+              margin: '20px 20px',
+            }}
+          >
+            <UserButtonGroup>
+              <UserButton handleClick={handleModal}>End quiz</UserButton>
+            </UserButtonGroup>
+          </Box>
+          <UserTestModal modal={modal} handleClick={handleModal} />
+        </Container>
+      )}
+    </>
   );
 }
