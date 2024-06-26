@@ -5,8 +5,9 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 
 import UserButton from '../../features/UserButtons/TypeOfButton';
-import { RootState } from '../store/store';
+import { RootState, useAppDispatch } from '../store/store';
 import { configTest } from '../store/selectors';
+import { removeStructureAndDataTest } from '../store/QuestionsSlice';
 
 export default function UserResult() {
   const configForTest = useSelector(configTest);
@@ -20,6 +21,8 @@ export default function UserResult() {
     (state: RootState) => state.answers.time,
   );
 
+  const dispatch = useAppDispatch();
+
   const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(1),
     textAlign: 'center',
@@ -29,6 +32,10 @@ export default function UserResult() {
     height: '100%',
     overflow: 'hidden',
   }));
+
+  const handleRemoveDataAndStructure = () => {
+    dispatch(removeStructureAndDataTest());
+  };
 
   return (
     <Container>
@@ -76,7 +83,9 @@ export default function UserResult() {
         }}
       >
         <UserButton link={'/test'}>Restart</UserButton>
-        <UserButton link={'/'}>Choose another quiz</UserButton>
+        <UserButton link={'/'} handleClick={handleRemoveDataAndStructure}>
+          Choose another quiz
+        </UserButton>
       </Box>
     </Container>
   );

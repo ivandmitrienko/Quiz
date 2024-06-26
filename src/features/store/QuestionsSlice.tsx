@@ -35,6 +35,9 @@ const questionsSlice = createSlice({
     saveStructureTest: (state, action: PayloadAction<IQuizConfigState>) => {
       state.configTest = action.payload;
     },
+    removeStructureAndDataTest: (state) => {
+      return (state = initialState);
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(createSliceQuestions.fulfilled, (state, action) => {
@@ -43,5 +46,6 @@ const questionsSlice = createSlice({
   },
 });
 
-export const { saveStructureTest } = questionsSlice.actions;
+export const { saveStructureTest, removeStructureAndDataTest } =
+  questionsSlice.actions;
 export const questionsReducer = questionsSlice.reducer;

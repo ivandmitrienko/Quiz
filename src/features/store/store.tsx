@@ -1,15 +1,34 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { questionsReducer } from './QuestionsSlice';
 import { useDispatch } from 'react-redux';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+import { combineReducers } from '@reduxjs/toolkit';
+
+import { questionsReducer } from './QuestionsSlice';
 import { resultReducer } from './ResultSlice';
 
-export const store = configureStore({
-  reducer: {
-    questions: questionsReducer,
-    answers: resultReducer,
-  },
-  devTools: true,
+const persistConfig = {
+  key: 'root',
+  storage,
+};
+
+const rootReducer = combineReducers({
+  questions: questionsReducer,
+  answers: resultReducer,
 });
+
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+export const store = configureStore({
+  reducer: persistedReducer,
+  devTools: true,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
+});
+
+export const persistor = persistStore(store);
 
 export type RootState = ReturnType<typeof store.getState>;
 

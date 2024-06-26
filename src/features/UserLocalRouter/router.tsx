@@ -1,26 +1,25 @@
 import { Suspense, lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
-import Layout from '../Layout';
-import UserForm from '../UserForm/UserForm';
-import UserResult from '../UserResult/UserResult';
-import UserStatistic from '../UserStatistic/UserStatistic';
-
+const Layout = lazy(() => import('../Layout'));
+const UserForm = lazy(() => import('../UserForm/UserForm'));
+const UserResult = lazy(() => import('../UserResult/UserResult'));
+const UserStatistic = lazy(() => import('../UserStatistic/UserStatistic'));
 const UserTest = lazy(() => import('../UserTest/UserTest'));
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />,
+    element: (
+      <Suspense fallback={<>🌀 Loading...</>}>
+        <Layout />
+      </Suspense>
+    ),
     children: [
       { index: true, element: <UserForm /> },
       {
         path: '/test',
-        element: (
-          <Suspense fallback={<>🌀 Loading...</>}>
-            <UserTest />
-          </Suspense>
-        ),
+        element: <UserTest />,
       },
       { path: '/results', element: <UserResult /> },
       { path: '/statistic', element: <UserStatistic /> },
