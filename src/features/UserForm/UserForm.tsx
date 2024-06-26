@@ -122,7 +122,7 @@ export default function UserForm() {
         <UserButton link='/test' handleClick={handleClickStart}>
           Start quiz
         </UserButton>
-        <UserButton link='/results'>See my stats</UserButton>
+        <UserButton link='/statistic'>See my stats</UserButton>
       </UserButtonGroup>
     </Box>
   );

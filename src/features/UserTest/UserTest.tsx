@@ -15,30 +15,35 @@ import UserButton from '../UserButtons/TypeOfButton';
 import UserTestModal from './UserTestModal';
 import TitleOfPage from '../TitleOfPage/TitleOfPage';
 import { useAppDispatch } from '../store/store';
-import { addCorrectAnswer } from '../store/ResultSlice';
-import { confiqTest, questionsTest } from '../store/selectors';
+import {
+  addCorrectAnswer,
+  addTimeSpentOnQuestions,
+} from '../store/ResultSlice';
+import { configTest, questionsTest } from '../store/selectors';
 
 export default function UserTest() {
+  const configForTest = useSelector(configTest);
+  const questionsForTest = useSelector(questionsTest);
+
   const dispatch = useAppDispatch();
 
   const navigate = useNavigate();
 
-  const confiqForTest = useSelector(confiqTest);
-  const questionsForTest = useSelector(questionsTest);
-
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [totalTime, setTotalTime] = useState(parseInt(confiqForTest.time) * 60);
+  const [totalTime, setTotalTime] = useState(parseInt(configForTest.time) * 60);
   const [isTimerActive, setIsTimerActive] = useState(true);
   const [modal, setModal] = useState(false);
 
   const currentQuestion = questionsForTest[currentQuestionIndex];
 
+  const timeSpentOnQuestions = parseInt(configForTest.time) * 60 - totalTime;
+
   const handleNextQuestion = useCallback(() => {
     if (currentQuestionIndex < questionsForTest.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
-      // Handle end of quiz
       setIsTimerActive(false);
+      dispatch(addTimeSpentOnQuestions(timeSpentOnQuestions));
       navigate('/results');
     }
   }, [currentQuestionIndex, questionsForTest.length]);
@@ -52,6 +57,7 @@ export default function UserTest() {
     } else if (totalTime === 0) {
       setIsTimerActive(false);
       navigate('/results');
+      dispatch(addTimeSpentOnQuestions(timeSpentOnQuestions));
     }
     return () => clearInterval(timerInterval);
   }, [totalTime, isTimerActive]);

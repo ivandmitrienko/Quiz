@@ -24,7 +24,7 @@ export const createSliceQuestions = createAsyncThunk(
 );
 
 const initialState: IState = {
-  confiqTest: {} as IQuizConfigState,
+  configTest: {} as IQuizConfigState,
   dataForTest: [],
 };
 
@@ -33,7 +33,7 @@ const questionsSlice = createSlice({
   initialState,
   reducers: {
     saveStructureTest: (state, action: PayloadAction<IQuizConfigState>) => {
-      state.confiqTest = action.payload;
+      state.configTest = action.payload;
     },
   },
   extraReducers: (builder) => {

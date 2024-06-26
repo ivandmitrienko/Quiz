@@ -47,6 +47,6 @@ export interface IStructureOfQuestions {
 }
 
 export interface IState {
-  confiqTest: IQuizConfigState;
+  configTest: IQuizConfigState;
   dataForTest: IStructureOfQuestions[];
 }

@@ -6,11 +6,20 @@ import Paper from '@mui/material/Paper';
 
 import UserButton from '../../features/UserButtons/TypeOfButton';
 import { RootState } from '../store/store';
+import { configTest } from '../store/selectors';
 
 export default function UserResult() {
+  const configForTest = useSelector(configTest);
+  const { time, type, category, difficulty } = configForTest;
+
   const answers = useSelector(
     (state: RootState) => state.answers.answers.length,
   );
+
+  const timeSpentOnQuestions = useSelector(
+    (state: RootState) => state.answers.time,
+  );
+
   const Item = styled(Paper)(({ theme }) => ({
     padding: theme.spacing(1),
     textAlign: 'center',
@@ -45,12 +54,15 @@ export default function UserResult() {
             <Item>You answered {answers} out of 10 questions correctly</Item>
           </Grid>
           <Grid item xs={4}>
-            <Item>Конфигурация теста, тип, категория, время и сложность</Item>
+            <Item>
+              Configuration of test: {type}, {category}, {time} и {difficulty}
+            </Item>
           </Grid>
           <Grid item xs={4}>
             <Item>
-              Cколько времени потребовалось пользователю, чтобы ответить на все
-              вопросы
+              time spent on running test:{' '}
+              {Math.floor(timeSpentOnQuestions / 60)}m{' '}
+              {timeSpentOnQuestions % 60}s
             </Item>
           </Grid>
         </Grid>
