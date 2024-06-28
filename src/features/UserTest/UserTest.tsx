@@ -20,7 +20,7 @@ import {
   addTimeSpentOnQuestions,
 } from '../store/ResultSlice';
 import { configTest, loading, questionsTest } from '../store/selectors';
-import LoadingContent from '../loadingContent/LoadingContent';
+import LoadingContent from '../LoadingContent/LoadingContent';
 
 export default function UserTest() {
   const configForTest = useSelector(configTest);

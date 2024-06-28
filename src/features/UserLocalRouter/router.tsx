@@ -1,7 +1,7 @@
 import { Suspense, lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
-import LoadingContent from '../loadingContent/LoadingContent';
+import LoadingContent from '../LoadingContent/LoadingContent';
 
 const Layout = lazy(() => import('../Layout'));
 const UserForm = lazy(() => import('../UserForm/UserForm'));

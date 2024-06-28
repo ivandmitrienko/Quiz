@@ -8,18 +8,13 @@ import {
 export const createSliceQuestions = createAsyncThunk(
   '@@questions/createQuestions',
   async (config: IQuizConfigState) => {
-    const { difficulty, type, category, quantityOfQuestions } = config;
+    const { type, difficulty, quantityOfQuestions, category } = config;
+
     const res = await fetch(
-      `http://localhost:3000/questions/${type}/${category}`,
+      `http://localhost:3000/questions?type=${type}&category=${category}&difficulty=${difficulty}&_start=0&_limit=${quantityOfQuestions}`,
     );
     const data: IStructureOfQuestions[] = await res.json();
-
-    /*here use filter  and slice methods because this version of json-server doesn't support multiple filter*/
-    const questions = data
-      .filter((e) => e.difficulty === difficulty)
-      .slice(0, quantityOfQuestions);
-
-    return questions;
+    return data;
   },
 );
 
@@ -48,6 +43,9 @@ const questionsSlice = createSlice({
       .addCase(createSliceQuestions.fulfilled, (state, action) => {
         state.dataForTest = action.payload;
         state.loading = 'idle';
+      })
+      .addCase(createSliceQuestions.rejected, (state) => {
+        state.loading = 'failed';
       });
   },
 });
