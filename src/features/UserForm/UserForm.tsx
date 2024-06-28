@@ -22,6 +22,7 @@ export default function UserForm() {
     difficulty: 'easy',
     type: 'multiple',
     time: '1m',
+    firstQuestion: 0,
   });
 
   const dispatch = useAppDispatch();

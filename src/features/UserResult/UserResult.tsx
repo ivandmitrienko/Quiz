@@ -7,7 +7,10 @@ import Paper from '@mui/material/Paper';
 import UserButton from '../../features/UserButtons/TypeOfButton';
 import { RootState, useAppDispatch } from '../store/store';
 import { configTest } from '../store/selectors';
-import { removeStructureAndDataTest } from '../store/QuestionsSlice';
+import {
+  changeStartingQuestion,
+  removeStructureAndDataTest,
+} from '../store/QuestionsSlice';
 
 export default function UserResult() {
   const configForTest = useSelector(configTest);
@@ -35,6 +38,10 @@ export default function UserResult() {
 
   const handleRemoveDataAndStructure = () => {
     dispatch(removeStructureAndDataTest());
+  };
+
+  const handleRestartData = () => {
+    dispatch(changeStartingQuestion());
   };
 
   return (
@@ -82,7 +89,9 @@ export default function UserResult() {
           margin: '20px 20px',
         }}
       >
-        <UserButton link={'/test'}>Restart</UserButton>
+        <UserButton link={'/test'} handleClick={handleRestartData}>
+          Restart
+        </UserButton>
         <UserButton link={'/'} handleClick={handleRemoveDataAndStructure}>
           Choose another quiz
         </UserButton>

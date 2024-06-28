@@ -22,6 +22,7 @@ export interface IQuizConfigState {
   difficulty: string;
   type: string;
   time: string;
+  firstQuestion: number;
 }
 
 export interface ISelect {

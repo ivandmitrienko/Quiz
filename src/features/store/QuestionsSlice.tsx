@@ -8,10 +8,11 @@ import {
 export const createSliceQuestions = createAsyncThunk(
   '@@questions/createQuestions',
   async (config: IQuizConfigState) => {
-    const { type, difficulty, quantityOfQuestions, category } = config;
+    const { type, difficulty, quantityOfQuestions, category, firstQuestion } =
+      config;
 
     const res = await fetch(
-      `http://localhost:3000/questions?type=${type}&category=${category}&difficulty=${difficulty}&_start=0&_limit=${quantityOfQuestions}`,
+      `http://localhost:3000/questions?type=${type}&category=${category}&difficulty=${difficulty}&_start=${firstQuestion}&_limit=${quantityOfQuestions}`,
     );
     const data: IStructureOfQuestions[] = await res.json();
     return data;
@@ -34,6 +35,9 @@ const questionsSlice = createSlice({
     removeStructureAndDataTest: (state) => {
       return (state = initialState);
     },
+    changeStartingQuestion: (state) => {
+      state.configTest.firstQuestion += state.configTest.quantityOfQuestions;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -50,6 +54,9 @@ const questionsSlice = createSlice({
   },
 });
 
-export const { saveStructureTest, removeStructureAndDataTest } =
-  questionsSlice.actions;
+export const {
+  saveStructureTest,
+  removeStructureAndDataTest,
+  changeStartingQuestion,
+} = questionsSlice.actions;
 export const questionsReducer = questionsSlice.reducer;
