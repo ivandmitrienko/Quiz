@@ -8,8 +8,8 @@ import UserButton from '../../features/UserButtons/TypeOfButton';
 import { RootState, useAppDispatch } from '../store/store';
 import { configTest } from '../store/selectors';
 import {
-  changeStartingQuestion,
   removeStructureAndDataTest,
+  restartQuiz,
 } from '../store/QuestionsSlice';
 
 export default function UserResult() {
@@ -41,7 +41,7 @@ export default function UserResult() {
   };
 
   const handleRestartData = () => {
-    dispatch(changeStartingQuestion());
+    dispatch(restartQuiz());
   };
 
   return (

@@ -15,7 +15,26 @@ export const createSliceQuestions = createAsyncThunk(
       `http://localhost:3000/questions?type=${type}&category=${category}&difficulty=${difficulty}&_start=${firstQuestion}&_limit=${quantityOfQuestions}`,
     );
     const data: IStructureOfQuestions[] = await res.json();
+
     return data;
+  },
+);
+
+export const restartQuiz = createAsyncThunk(
+  '@@questions/restartQuiz',
+  async (_, { getState, dispatch }) => {
+    const state = getState() as { questions: IState };
+
+    const config = {
+      ...state.questions.configTest,
+      firstQuestion:
+        state.questions.configTest.firstQuestion +
+        state.questions.configTest.quantityOfQuestions,
+    };
+
+    const result = await dispatch(createSliceQuestions(config));
+
+    return result.payload as IStructureOfQuestions[];
   },
 );
 
@@ -35,9 +54,6 @@ const questionsSlice = createSlice({
     removeStructureAndDataTest: (state) => {
       return (state = initialState);
     },
-    changeStartingQuestion: (state) => {
-      state.configTest.firstQuestion += state.configTest.quantityOfQuestions;
-    },
   },
   extraReducers: (builder) => {
     builder
@@ -50,13 +66,20 @@ const questionsSlice = createSlice({
       })
       .addCase(createSliceQuestions.rejected, (state) => {
         state.loading = 'failed';
-      });
+      })
+      .addCase(restartQuiz.fulfilled, (state, action) => {
+        state.dataForTest = action.payload;
+        state.loading = 'idle';
+      })
+      .addMatcher(
+        (action) => action.type.endsWith('/pending'),
+        (state) => {
+          state.loading = 'loading';
+        },
+      );
   },
 });
 
-export const {
-  saveStructureTest,
-  removeStructureAndDataTest,
-  changeStartingQuestion,
-} = questionsSlice.actions;
+export const { saveStructureTest, removeStructureAndDataTest } =
+  questionsSlice.actions;
 export const questionsReducer = questionsSlice.reducer;

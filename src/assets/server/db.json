@@ -2427,6 +2427,750 @@
             ],
             "category": "Literature",
             "difficulty": "easy"
+        },
+        {
+            "id": 201,
+            "question": "Which is the longest river in the world?",
+            "type": "multiple",
+            "correct_answer": "Nile",
+            "incorrect_answers": [
+                "Amazon",
+                "Yangtze",
+                "Mississippi"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 202,
+            "question": "Which chemical element has the highest melting point?",
+            "type": "multiple",
+            "correct_answer": "Tungsten",
+            "incorrect_answers": [
+                "Titanium",
+                "Platinum",
+                "Gold"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 203,
+            "question": "Who wrote the novel '1984'?",
+            "type": "multiple",
+            "correct_answer": "George Orwell",
+            "incorrect_answers": [
+                "Aldous Huxley",
+                "Ray Bradbury",
+                "J.R.R. Tolkien"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 204,
+            "question": "Is Antarctica the coldest continent on Earth?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 205,
+            "question": "What is the smallest planet in our Solar System?",
+            "type": "multiple",
+            "correct_answer": "Mercury",
+            "incorrect_answers": [
+                "Mars",
+                "Pluto",
+                "Earth"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 206,
+            "question": "Who is the author of 'The Great Gatsby'?",
+            "type": "multiple",
+            "correct_answer": "F. Scott Fitzgerald",
+            "incorrect_answers": [
+                "Ernest Hemingway",
+                "William Faulkner",
+                "John Steinbeck"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 207,
+            "question": "Was Marie Curie the first woman to win a Nobel Prize?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 208,
+            "question": "In which country is Mount Kilimanjaro located?",
+            "type": "multiple",
+            "correct_answer": "Tanzania",
+            "incorrect_answers": [
+                "Kenya",
+                "Uganda",
+                "Zambia"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 209,
+            "question": "Who developed the theory of relativity?",
+            "type": "multiple",
+            "correct_answer": "Albert Einstein",
+            "incorrect_answers": [
+                "Isaac Newton",
+                "Galileo Galilei",
+                "Stephen Hawking"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 210,
+            "question": "Which novel by Jules Verne features a journey to the center of the Earth?",
+            "type": "multiple",
+            "correct_answer": "Journey to the Center of the Earth",
+            "incorrect_answers": [
+                "Twenty Thousand Leagues Under the Sea",
+                "Around the World in Eighty Days",
+                "The Mysterious Island"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 211,
+            "question": "Is the Great Barrier Reef the largest coral reef system in the world?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 212,
+            "question": "Which African country has the largest population?",
+            "type": "multiple",
+            "correct_answer": "Nigeria",
+            "incorrect_answers": [
+                "Ethiopia",
+                "Egypt",
+                "South Africa"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 213,
+            "question": "Who wrote 'Crime and Punishment'?",
+            "type": "multiple",
+            "correct_answer": "Fyodor Dostoevsky",
+            "incorrect_answers": [
+                "Leo Tolstoy",
+                "Anton Chekhov",
+                "Nikolai Gogol"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 214,
+            "question": "Is the Earth closer to the Sun during the summer in the Northern Hemisphere?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 215,
+            "question": "What is the capital city of Australia?",
+            "type": "multiple",
+            "correct_answer": "Canberra",
+            "incorrect_answers": [
+                "Sydney",
+                "Melbourne",
+                "Brisbane"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 216,
+            "question": "Who discovered penicillin?",
+            "type": "multiple",
+            "correct_answer": "Alexander Fleming",
+            "incorrect_answers": [
+                "Marie Curie",
+                "Louis Pasteur",
+                "Robert Koch"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 217,
+            "question": "Which Shakespeare play features the character Macbeth?",
+            "type": "multiple",
+            "correct_answer": "Macbeth",
+            "incorrect_answers": [
+                "Hamlet",
+                "Romeo and Juliet",
+                "Othello"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 218,
+            "question": "Is the Dead Sea the saltiest body of water in the world?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 219,
+            "question": "What is the atomic number of carbon?",
+            "type": "multiple",
+            "correct_answer": "6",
+            "incorrect_answers": [
+                "8",
+                "12",
+                "14"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 220,
+            "question": "Who is the author of 'The Catcher in the Rye'?",
+            "type": "multiple",
+            "correct_answer": "J.D. Salinger",
+            "incorrect_answers": [
+                "Ernest Hemingway",
+                "F. Scott Fitzgerald",
+                "John Steinbeck"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 221,
+            "question": "Is the Pacific Ocean the largest ocean on Earth?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 222,
+            "question": "Which scientist formulated the laws of motion and universal gravitation?",
+            "type": "multiple",
+            "correct_answer": "Isaac Newton",
+            "incorrect_answers": [
+                "Albert Einstein",
+                "Galileo Galilei",
+                "Stephen Hawking"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 223,
+            "question": "In which European city would you find the Eiffel Tower?",
+            "type": "multiple",
+            "correct_answer": "Paris",
+            "incorrect_answers": [
+                "London",
+                "Rome",
+                "Berlin"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 224,
+            "question": "Who wrote 'War and Peace'?",
+            "type": "multiple",
+            "correct_answer": "Leo Tolstoy",
+            "incorrect_answers": [
+                "Fyodor Dostoevsky",
+                "Anton Chekhov",
+                "Nikolai Gogol"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 225,
+            "question": "Is Mount Everest the tallest mountain above sea level?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 226,
+            "question": "What is the chemical formula for ozone?",
+            "type": "multiple",
+            "correct_answer": "O3",
+            "incorrect_answers": [
+                "CO2",
+                "H2O",
+                "NO2"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 227,
+            "question": "Who wrote 'The Odyssey'?",
+            "type": "multiple",
+            "correct_answer": "Homer",
+            "incorrect_answers": [
+                "Virgil",
+                "Sophocles",
+                "Aristotle"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 228,
+            "question": "Is the Amazon Rainforest the largest rainforest in the world?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 229,
+            "question": "Which scientist proposed the theory of continental drift?",
+            "type": "multiple",
+            "correct_answer": "Alfred Wegener",
+            "incorrect_answers": [
+                "Charles Darwin",
+                "Isaac Newton",
+                "Gregor Mendel"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 230,
+            "question": "Who is the author of 'Pride and Prejudice'?",
+            "type": "multiple",
+            "correct_answer": "Jane Austen",
+            "incorrect_answers": [
+                "Emily Brontë",
+                "Charlotte Brontë",
+                "Mary Shelley"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 231,
+            "question": "Is the Sahara Desert the largest hot desert in the world?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 232,
+            "question": "Which element has the highest atomic number?",
+            "type": "multiple",
+            "correct_answer": "Oganesson",
+            "incorrect_answers": [
+                "Uranium",
+                "Gold",
+                "Plutonium"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 233,
+            "question": "Who wrote 'One Hundred Years of Solitude'?",
+            "type": "multiple",
+            "correct_answer": "Gabriel García Márquez",
+            "incorrect_answers": [
+                "Isabel Allende",
+                "Mario Vargas Llosa",
+                "Jorge Luis Borges"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 234,
+            "question": "Is the Grand Canyon the deepest canyon in the world?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 235,
+            "question": "Who discovered the structure of DNA?",
+            "type": "multiple",
+            "correct_answer": "James Watson and Francis Crick",
+            "incorrect_answers": [
+                "Rosalind Franklin",
+                "Gregor Mendel",
+                "Barbara McClintock"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 236,
+            "question": "Who wrote 'Don Quixote'?",
+            "type": "multiple",
+            "correct_answer": "Miguel de Cervantes",
+            "incorrect_answers": [
+                "Federico García Lorca",
+                "Pablo Neruda",
+                "Gabriel García Márquez"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 237,
+            "question": "Is Lake Baikal the deepest lake in the world?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 238,
+            "question": "Who discovered the principles of vaccination?",
+            "type": "multiple",
+            "correct_answer": "Edward Jenner",
+            "incorrect_answers": [
+                "Louis Pasteur",
+                "Robert Koch",
+                "Alexander Fleming"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 239,
+            "question": "Who wrote 'The Canterbury Tales'?",
+            "type": "multiple",
+            "correct_answer": "Geoffrey Chaucer",
+            "incorrect_answers": [
+                "William Shakespeare",
+                "John Milton",
+                "John Donne"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 240,
+            "question": "Is the Mediterranean Sea the largest sea in the world?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 241,
+            "question": "Who formulated the theory of evolution by natural selection?",
+            "type": "multiple",
+            "correct_answer": "Charles Darwin",
+            "incorrect_answers": [
+                "Gregor Mendel",
+                "Alfred Russel Wallace",
+                "Jean-Baptiste Lamarck"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 242,
+            "question": "Who wrote 'The Picture of Dorian Gray'?",
+            "type": "multiple",
+            "correct_answer": "Oscar Wilde",
+            "incorrect_answers": [
+                "Emily Brontë",
+                "Charlotte Brontë",
+                "Mary Shelley"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 243,
+            "question": "Is the Gobi Desert the largest desert in Asia?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 244,
+            "question": "Who discovered radioactivity?",
+            "type": "multiple",
+            "correct_answer": "Marie Curie",
+            "incorrect_answers": [
+                "Albert Einstein",
+                "Isaac Newton",
+                "Niels Bohr"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 245,
+            "question": "Who wrote 'The Iliad'?",
+            "type": "multiple",
+            "correct_answer": "Homer",
+            "incorrect_answers": [
+                "Virgil",
+                "Sophocles",
+                "Aristotle"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 246,
+            "question": "Is Lake Superior the largest freshwater lake by surface area in the world?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 247,
+            "question": "Who formulated the laws of thermodynamics?",
+            "type": "multiple",
+            "correct_answer": "Lord Kelvin",
+            "incorrect_answers": [
+                "Isaac Newton",
+                "Albert Einstein",
+                "Stephen Hawking"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 248,
+            "question": "Who wrote 'The Brothers Karamazov'?",
+            "type": "multiple",
+            "correct_answer": "Fyodor Dostoevsky",
+            "incorrect_answers": [
+                "Leo Tolstoy",
+                "Anton Chekhov",
+                "Nikolai Gogol"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 249,
+            "question": "Is the Caspian Sea the largest lake in the world by surface area?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 250,
+            "question": "Who discovered the existence of neutrons?",
+            "type": "multiple",
+            "correct_answer": "James Chadwick",
+            "incorrect_answers": [
+                "Niels Bohr",
+                "Ernest Rutherford",
+                "Max Planck"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 251,
+            "question": "Who wrote 'The Divine Comedy'?",
+            "type": "multiple",
+            "correct_answer": "Dante Alighieri",
+            "incorrect_answers": [
+                "Geoffrey Chaucer",
+                "John Milton",
+                "Homer"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 252,
+            "question": "Is Lake Titicaca the highest navigable lake in the world?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 253,
+            "question": "Who discovered the theory of general relativity?",
+            "type": "multiple",
+            "correct_answer": "Albert Einstein",
+            "incorrect_answers": [
+                "Isaac Newton",
+                "Galileo Galilei",
+                "Stephen Hawking"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 254,
+            "question": "Who wrote 'Moby-Dick'?",
+            "type": "multiple",
+            "correct_answer": "Herman Melville",
+            "incorrect_answers": [
+                "Mark Twain",
+                "Nathaniel Hawthorne",
+                "Edgar Allan Poe"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 255,
+            "question": "Is the Danube River the longest river in Europe?",
+            "type": "boolean",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 256,
+            "question": "Who discovered the electron?",
+            "type": "multiple",
+            "correct_answer": "J.J. Thomson",
+            "incorrect_answers": [
+                "Marie Curie",
+                "Ernest Rutherford",
+                "Niels Bohr"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 257,
+            "question": "Who wrote 'The Odyssey'?",
+            "type": "multiple",
+            "correct_answer": "Homer",
+            "incorrect_answers": [
+                "Virgil",
+                "Sophocles",
+                "Aristotle"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
+        },
+        {
+            "id": 258,
+            "question": "Is Mount Elbrus the highest mountain in Europe?",
+            "type": "boolean",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ],
+            "category": "Geography",
+            "difficulty": "hard"
+        },
+        {
+            "id": 259,
+            "question": "Who discovered the laws of planetary motion?",
+            "type": "multiple",
+            "correct_answer": "Johannes Kepler",
+            "incorrect_answers": [
+                "Nicolaus Copernicus",
+                "Galileo Galilei",
+                "Isaac Newton"
+            ],
+            "category": "Science",
+            "difficulty": "hard"
+        },
+        {
+            "id": 260,
+            "question": "Who is the author of 'Frankenstein'?",
+            "type": "multiple",
+            "correct_answer": "Mary Shelley",
+            "incorrect_answers": [
+                "Emily Brontë",
+                "Charlotte Brontë",
+                "Jane Austen"
+            ],
+            "category": "Literature",
+            "difficulty": "hard"
         }
     ]
 }
