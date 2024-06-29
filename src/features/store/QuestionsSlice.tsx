@@ -30,7 +30,6 @@ export const restartQuiz = createAsyncThunk(
     const result = await dispatch(
       createSliceQuestions(state.questions.configTest),
     );
-
     const data = result.payload as IStructureOfQuestions[];
 
     return data;
