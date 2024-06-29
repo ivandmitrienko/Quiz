@@ -23,18 +23,17 @@ export const createSliceQuestions = createAsyncThunk(
 export const restartQuiz = createAsyncThunk(
   '@@questions/restartQuiz',
   async (_, { getState, dispatch }) => {
+    dispatch(changeStartQuestion());
+
     const state = getState() as { questions: IState };
 
-    const config = {
-      ...state.questions.configTest,
-      firstQuestion:
-        state.questions.configTest.firstQuestion +
-        state.questions.configTest.quantityOfQuestions,
-    };
+    const result = await dispatch(
+      createSliceQuestions(state.questions.configTest),
+    );
 
-    const result = await dispatch(createSliceQuestions(config));
+    const data = result.payload as IStructureOfQuestions[];
 
-    return result.payload as IStructureOfQuestions[];
+    return data;
   },
 );
 
@@ -53,6 +52,9 @@ const questionsSlice = createSlice({
     },
     removeStructureAndDataTest: (state) => {
       return (state = initialState);
+    },
+    changeStartQuestion: (state) => {
+      state.configTest.firstQuestion += state.configTest.quantityOfQuestions;
     },
   },
   extraReducers: (builder) => {
@@ -80,6 +82,9 @@ const questionsSlice = createSlice({
   },
 });
 
-export const { saveStructureTest, removeStructureAndDataTest } =
-  questionsSlice.actions;
+export const {
+  saveStructureTest,
+  removeStructureAndDataTest,
+  changeStartQuestion,
+} = questionsSlice.actions;
 export const questionsReducer = questionsSlice.reducer;
