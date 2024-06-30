@@ -11,10 +11,12 @@ import {
   removeStructureAndDataTest,
   restartQuiz,
 } from '../store/QuestionsSlice';
+import { removeCorrentResult } from '../store/ResultSlice';
 
 export default function UserResult() {
   const configForTest = useSelector(configTest);
-  const { time, type, category, difficulty } = configForTest;
+  const { time, type, category, difficulty, quantityOfQuestions } =
+    configForTest;
 
   const answers = useSelector(
     (state: RootState) => state.answers.answers.length,
@@ -38,10 +40,12 @@ export default function UserResult() {
 
   const handleRemoveDataAndStructure = () => {
     dispatch(removeStructureAndDataTest());
+    dispatch(removeCorrentResult());
   };
 
   const handleRestartData = () => {
     dispatch(restartQuiz());
+    dispatch(removeCorrentResult());
   };
 
   return (
@@ -65,7 +69,10 @@ export default function UserResult() {
       >
         <Grid container columnSpacing={1}>
           <Grid item xs={4}>
-            <Item>You answered {answers} out of 10 questions correctly</Item>
+            <Item>
+              You answered {answers} out of {quantityOfQuestions} questions
+              correctly
+            </Item>
           </Grid>
           <Grid item xs={4}>
             <Item>
