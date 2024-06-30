@@ -21,6 +21,10 @@ import {
 } from '../store/ResultSlice';
 import { configTest, loading, questionsTest } from '../store/selectors';
 import LoadingContent from '../LoadingContent/LoadingContent';
+import {
+  addAnswerToStatistic,
+  addCorrectAnswerToStatistic,
+} from '../store/StatisticSlice';
 
 export default function UserTest() {
   const configForTest = useSelector(configTest);
@@ -65,10 +69,10 @@ export default function UserTest() {
   }, [totalTime, isTimerActive]);
 
   const handleAnswer = (answer: string) => {
+    addAnswerToStatistic(currentQuestion);
     if (answer === currentQuestion.correct_answer) {
-      dispatch(addCorrectAnswer(currentQuestion.correct_answer));
-    } else {
-      console.log('Incorrect!');
+      dispatch(addCorrectAnswer(answer));
+      dispatch(addCorrectAnswerToStatistic(answer));
     }
     handleNextQuestion();
   };

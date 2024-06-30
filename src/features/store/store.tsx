@@ -6,6 +6,7 @@ import { combineReducers } from '@reduxjs/toolkit';
 
 import { questionsReducer } from './QuestionsSlice';
 import { resultReducer } from './ResultSlice';
+import { staticReducer } from './StatisticSlice';
 
 const persistConfig = {
   key: 'root',
@@ -15,6 +16,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   questions: questionsReducer,
   answers: resultReducer,
+  static: staticReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

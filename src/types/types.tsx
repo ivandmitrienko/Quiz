@@ -37,7 +37,7 @@ export interface ISelect {
   ) => void;
 }
 
-export interface IStructureOfQuestions {
+export interface IStructureOfQuestion {
   id: number;
   question: string;
   type: string;
@@ -49,6 +49,19 @@ export interface IStructureOfQuestions {
 
 export interface IState {
   configTest: IQuizConfigState;
-  dataForTest: IStructureOfQuestions[];
+  dataForTest: IStructureOfQuestion[];
   loading: string;
+}
+
+export interface IStatistic {
+  TotalNumberOfQuestions: string[];
+  TotalNumberCorrectAnswers: string[];
+  QuestionsFromScience: string[];
+  QuestionsFromGeography: string[];
+  QuestionsFromLiterature: string[];
+  EasyQuestions: string[];
+  MiddleQuestions: string[];
+  HardQuestions: string[];
+  MultipleQuestions: string[];
+  BooleanQuestions: string[];
 }

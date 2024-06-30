@@ -2,7 +2,7 @@ import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import {
   IQuizConfigState,
   IState,
-  IStructureOfQuestions,
+  IStructureOfQuestion,
 } from '../../types/types';
 
 export const createSliceQuestions = createAsyncThunk(
@@ -14,7 +14,7 @@ export const createSliceQuestions = createAsyncThunk(
     const res = await fetch(
       `http://localhost:3000/questions?type=${type}&category=${category}&difficulty=${difficulty}&_start=${firstQuestion}&_limit=${quantityOfQuestions}`,
     );
-    const data: IStructureOfQuestions[] = await res.json();
+    const data: IStructureOfQuestion[] = await res.json();
 
     return data;
   },
@@ -30,7 +30,7 @@ export const restartQuiz = createAsyncThunk(
     const result = await dispatch(
       createSliceQuestions(state.questions.configTest),
     );
-    const data = result.payload as IStructureOfQuestions[];
+    const data = result.payload as IStructureOfQuestion[];
 
     return data;
   },
