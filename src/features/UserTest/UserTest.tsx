@@ -69,11 +69,13 @@ export default function UserTest() {
   }, [totalTime, isTimerActive]);
 
   const handleAnswer = (answer: string) => {
-    addAnswerToStatistic(currentQuestion);
+    dispatch(addAnswerToStatistic(currentQuestion));
+
     if (answer === currentQuestion.correct_answer) {
       dispatch(addCorrectAnswer(answer));
       dispatch(addCorrectAnswerToStatistic(answer));
     }
+
     handleNextQuestion();
   };
 

@@ -41,13 +41,13 @@ const statisticSlice = createSlice({
       }
 
       switch (difficulty) {
-        case 'Easy':
+        case 'easy':
           state.EasyQuestions.push(difficulty);
           break;
-        case 'Middle':
+        case 'middle':
           state.MiddleQuestions.push(difficulty);
           break;
-        case 'Hard':
+        case 'hard':
           state.HardQuestions.push(difficulty);
           break;
         default:
@@ -55,10 +55,10 @@ const statisticSlice = createSlice({
       }
 
       switch (type) {
-        case 'Multiple':
+        case 'multiple':
           state.MultipleQuestions.push(type);
           break;
-        case 'Boolean':
+        case 'boolean':
           state.BooleanQuestions.push(type);
           break;
         default:
