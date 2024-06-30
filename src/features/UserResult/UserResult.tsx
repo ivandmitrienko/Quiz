@@ -1,8 +1,6 @@
 import { useSelector } from 'react-redux';
 
 import { Box, Container, Grid } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
 
 import UserButton from '../../features/UserButtons/TypeOfButton';
 import { RootState, useAppDispatch } from '../store/store';
@@ -12,6 +10,7 @@ import {
   restartQuiz,
 } from '../store/QuestionsSlice';
 import { removeCorrentResult } from '../store/ResultSlice';
+import { Item } from '../../assets/utilies/styleForItemGrid';
 
 export default function UserResult() {
   const configForTest = useSelector(configTest);
@@ -27,16 +26,6 @@ export default function UserResult() {
   );
 
   const dispatch = useAppDispatch();
-
-  const Item = styled(Paper)(({ theme }) => ({
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    fontWeight: '700',
-    maxHeight: '80px',
-    height: '100%',
-    overflow: 'hidden',
-  }));
 
   const handleRemoveDataAndStructure = () => {
     dispatch(removeStructureAndDataTest());

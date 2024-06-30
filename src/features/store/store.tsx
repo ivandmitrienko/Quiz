@@ -16,7 +16,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   questions: questionsReducer,
   answers: resultReducer,
-  static: staticReducer,
+  statistic: staticReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
