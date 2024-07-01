@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
 import LoadingContent from '../common/LoadingContent/LoadingContent';
+import { AppRoutes } from '../enums/enums';
 
 const Layout = lazy(() => import('../Layout'));
 const Form = lazy(() => import('../pages/Form/Form'));
@@ -13,7 +14,7 @@ const Interrogation = lazy(
 
 export const router = createBrowserRouter([
   {
-    path: '/',
+    path: `${AppRoutes.ROOT}`,
     element: (
       <Suspense fallback={<LoadingContent />}>
         <Layout />
@@ -22,11 +23,11 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Form /> },
       {
-        path: '/test',
+        path: `${AppRoutes.INTERROGATION}`,
         element: <Interrogation />,
       },
-      { path: '/results', element: <Result /> },
-      { path: '/statistic', element: <Statistic /> },
+      { path: `${AppRoutes.RESULT}`, element: <Result /> },
+      { path: `${AppRoutes.STATISTIC}`, element: <Statistic /> },
     ],
   },
 ]);

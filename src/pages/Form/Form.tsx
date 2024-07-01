@@ -14,6 +14,7 @@ import {
   saveStructureTest,
 } from '../../store/QuestionsSlice';
 import { useAppDispatch } from '../../store/store';
+import { AppRoutes } from '../../enums/enums';
 
 export default function Form() {
   const [config, setConfig] = useState<IQuizConfigState>({
@@ -120,10 +121,10 @@ export default function Form() {
         </Grid>
       </Grid>
       <ButtonGroup>
-        <Button link='/test' handleClick={handleClickStart}>
+        <Button link={AppRoutes.INTERROGATION} handleClick={handleClickStart}>
           Start quiz
         </Button>
-        <Button link='/statistic'>See my stats</Button>
+        <Button link={AppRoutes.STATISTIC}>See my stats</Button>
       </ButtonGroup>
     </Box>
   );

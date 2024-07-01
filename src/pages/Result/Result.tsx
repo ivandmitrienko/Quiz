@@ -9,7 +9,7 @@ import {
   removeStructureAndDataTest,
   restartQuiz,
 } from '../../store/QuestionsSlice';
-import { removeCorrentResult } from '../../store/ResultSlice';
+import { removeCurrentResult } from '../../store/ResultSlice';
 import { Item } from '../../utilies/styleForItemGrid';
 
 export default function UserResult() {
@@ -29,12 +29,12 @@ export default function UserResult() {
 
   const handleRemoveDataAndStructure = () => {
     dispatch(removeStructureAndDataTest());
-    dispatch(removeCorrentResult());
+    dispatch(removeCurrentResult());
   };
 
   const handleRestartData = () => {
     dispatch(restartQuiz());
-    dispatch(removeCorrentResult());
+    dispatch(removeCurrentResult());
   };
 
   return (
