@@ -2,7 +2,7 @@ import { IBotton } from '../../types/types';
 
 import { Link } from 'react-router-dom';
 
-import UserButton from './UserButton';
+import UserButton from './Button';
 
 export default function TypeOfButton({ children, handleClick, link }: IBotton) {
   return (
