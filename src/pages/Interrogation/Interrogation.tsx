@@ -10,21 +10,21 @@ import {
   Typography,
 } from '@mui/material';
 
-import UserButtonGroup from '../UserButtons/UserButtonGroup';
-import UserButton from '../UserButtons/TypeOfButton';
-import UserTestModal from './UserTestModal';
-import TitleOfPage from '../TitleOfPage/TitleOfPage';
-import { useAppDispatch } from '../store/store';
+import ButtonGroup from '../../common/Buttons/ButtonGroup';
+import Button from '../../common/Buttons/TypeOfButton';
+import ModalWindow from './ModalWindow';
+import Title from '../../common/Title/Title';
+import { useAppDispatch } from '../../store/store';
 import {
   addCorrectAnswer,
   addTimeSpentOnQuestions,
-} from '../store/ResultSlice';
-import { configTest, loading, questionsTest } from '../store/selectors';
-import LoadingContent from '../LoadingContent/LoadingContent';
+} from '../../store/ResultSlice';
+import { configTest, loading, questionsTest } from '../../store/selectors';
+import LoadingContent from '../../common/LoadingContent/LoadingContent';
 import {
   addAnswerToStatistic,
   addCorrectAnswerToStatistic,
-} from '../store/StatisticSlice';
+} from '../../store/StatisticSlice';
 
 export default function UserTest() {
   const configForTest = useSelector(configTest);
@@ -88,7 +88,7 @@ export default function UserTest() {
       {serverLoading === 'loading' && <LoadingContent />}
       {serverLoading === 'idle' && (
         <Container>
-          <TitleOfPage>Quiz test</TitleOfPage>
+          <Title>Quiz test</Title>
           <LinearProgress
             variant='determinate'
             value={((currentQuestionIndex + 1) / questionsForTest.length) * 100}
@@ -113,22 +113,22 @@ export default function UserTest() {
                   .sort()
                   .map((answer) => (
                     <Grid item xs={12} sm={6} key={answer}>
-                      <UserButton handleClick={() => handleAnswer(answer)}>
+                      <Button handleClick={() => handleAnswer(answer)}>
                         {answer}
-                      </UserButton>
+                      </Button>
                     </Grid>
                   ))
               ) : (
                 <>
                   <Grid item xs={6}>
-                    <UserButton handleClick={() => handleAnswer('True')}>
+                    <Button handleClick={() => handleAnswer('True')}>
                       True
-                    </UserButton>
+                    </Button>
                   </Grid>
                   <Grid item xs={6}>
-                    <UserButton handleClick={() => handleAnswer('False')}>
+                    <Button handleClick={() => handleAnswer('False')}>
                       False
-                    </UserButton>
+                    </Button>
                   </Grid>
                 </>
               )}
@@ -142,11 +142,11 @@ export default function UserTest() {
               margin: '20px 20px',
             }}
           >
-            <UserButtonGroup>
-              <UserButton handleClick={handleModal}>End quiz</UserButton>
-            </UserButtonGroup>
+            <ButtonGroup>
+              <Button handleClick={handleModal}>End quiz</Button>
+            </ButtonGroup>
           </Box>
-          <UserTestModal modal={modal} handleClick={handleModal} />
+          <ModalWindow modal={modal} handleClick={handleModal} />
         </Container>
       )}
     </>

@@ -2,15 +2,15 @@ import { useSelector } from 'react-redux';
 
 import { Box, Container, Grid } from '@mui/material';
 
-import UserButton from '../../features/UserButtons/TypeOfButton';
-import { RootState, useAppDispatch } from '../store/store';
-import { configTest } from '../store/selectors';
+import Button from '../../common/Buttons/TypeOfButton';
+import { RootState, useAppDispatch } from '../../store/store';
+import { configTest } from '../../store/selectors';
 import {
   removeStructureAndDataTest,
   restartQuiz,
-} from '../store/QuestionsSlice';
-import { removeCorrentResult } from '../store/ResultSlice';
-import { Item } from '../../assets/utilies/styleForItemGrid';
+} from '../../store/QuestionsSlice';
+import { removeCorrentResult } from '../../store/ResultSlice';
+import { Item } from '../../utilies/styleForItemGrid';
 
 export default function UserResult() {
   const configForTest = useSelector(configTest);
@@ -85,12 +85,12 @@ export default function UserResult() {
           margin: '20px 20px',
         }}
       >
-        <UserButton link={'/test'} handleClick={handleRestartData}>
+        <Button link={'/test'} handleClick={handleRestartData}>
           Restart
-        </UserButton>
-        <UserButton link={'/'} handleClick={handleRemoveDataAndStructure}>
+        </Button>
+        <Button link={'/'} handleClick={handleRemoveDataAndStructure}>
           Choose another quiz
-        </UserButton>
+        </Button>
       </Box>
     </Container>
   );

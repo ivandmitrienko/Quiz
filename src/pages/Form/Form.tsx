@@ -3,19 +3,19 @@ import { ChangeEvent, useState } from 'react';
 import { Grid, SelectChangeEvent, TextField } from '@mui/material';
 import Box from '@mui/material/Box';
 
-import UserButtonGroup from '../UserButtons/UserButtonGroup';
-import numberQuestions from '../../assets/utilies/numberQuestions';
-import UserButton from '../UserButtons/TypeOfButton';
+import ButtonGroup from '../../common/Buttons/ButtonGroup';
+import numberQuestions from '../../utilies/numberQuestions';
+import Button from '../../common/Buttons//TypeOfButton';
 import { IQuizConfigState } from '../../types/types';
-import UserSelect from './UserFormSelect';
-import TitleOfPage from '../TitleOfPage/TitleOfPage';
+import UserSelect from './FormSelect';
+import Title from '../../common/Title/Title';
 import {
   createSliceQuestions,
   saveStructureTest,
-} from '../store/QuestionsSlice';
-import { useAppDispatch } from '../store/store';
+} from '../../store/QuestionsSlice';
+import { useAppDispatch } from '../../store/store';
 
-export default function UserForm() {
+export default function Form() {
   const [config, setConfig] = useState<IQuizConfigState>({
     quantityOfQuestions: 5,
     category: 'Literature',
@@ -57,7 +57,7 @@ export default function UserForm() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <TitleOfPage>Quiz Configuration</TitleOfPage>
+      <Title>Quiz Configuration</Title>
       <Grid
         container
         sx={{ display: 'flex', justifyContent: 'center' }}
@@ -119,12 +119,12 @@ export default function UserForm() {
           </UserSelect>
         </Grid>
       </Grid>
-      <UserButtonGroup>
-        <UserButton link='/test' handleClick={handleClickStart}>
+      <ButtonGroup>
+        <Button link='/test' handleClick={handleClickStart}>
           Start quiz
-        </UserButton>
-        <UserButton link='/statistic'>See my stats</UserButton>
-      </UserButtonGroup>
+        </Button>
+        <Button link='/statistic'>See my stats</Button>
+      </ButtonGroup>
     </Box>
   );
 }

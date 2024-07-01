@@ -2,13 +2,13 @@ import React from 'react';
 
 import { Box, Modal } from '@mui/material';
 
-import UserButton from '../UserButtons/TypeOfButton';
+import Button from '../../common/Buttons/TypeOfButton';
 import { IModal } from '../../types/types';
-import { removeCorrentResult } from '../store/ResultSlice';
-import { useAppDispatch } from '../store/store';
-import { removeStructureAndDataTest } from '../store/QuestionsSlice';
+import { removeCorrentResult } from '../../store/ResultSlice';
+import { useAppDispatch } from '../../store/store';
+import { removeStructureAndDataTest } from '../../store/QuestionsSlice';
 
-export default function UserTestModal({ modal, handleClick }: IModal) {
+export default function ModalWindow({ modal, handleClick }: IModal) {
   const dispatch = useAppDispatch();
 
   const style = {
@@ -48,10 +48,10 @@ export default function UserTestModal({ modal, handleClick }: IModal) {
               justifyContent: 'space-evenly',
             }}
           >
-            <UserButton link={'/'} handleClick={clearCurrentResult}>
+            <Button link={'/'} handleClick={clearCurrentResult}>
               Confirm
-            </UserButton>
-            <UserButton handleClick={handleClick}>Cancel</UserButton>
+            </Button>
+            <Button handleClick={handleClick}>Cancel</Button>
           </Box>
         </Box>
       </Modal>

@@ -2,7 +2,7 @@ import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
 import { ISelect } from '../../types/types';
 
-export default function UserSelect({
+export default function CustomSelect({
   children,
   value,
   values,

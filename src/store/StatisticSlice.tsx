@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
-import { IStatistic, IStructureOfQuestion } from '../../types/types';
+import { IStatistic, IStructureOfQuestion } from '../types/types';
 
 const initialState: IStatistic = {
   TotalNumberOfQuestions: [],
