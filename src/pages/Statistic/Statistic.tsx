@@ -1,11 +1,12 @@
 import { Box, Container, Grid } from '@mui/material';
 
-import TitleOfPage from '../TitleOfPage/TitleOfPage';
-import { Item } from '../../assets/utilies/styleForItemGrid';
+import Title from '../../common/Title/Title';
+import { Item } from '../../utilies/styleForItemGrid';
 import { useSelector } from 'react-redux';
-import { statistic } from '../store/selectors';
-import UserButton from '../UserButtons/UserButton';
+import { statistic } from '../../store/selectors';
+import Button from '../../common/Buttons/Button';
 import { useNavigate } from 'react-router-dom';
+import { AppRoutes } from '../../enums/enums';
 
 export default function UserStatistic() {
   const userStatistic = useSelector(statistic);
@@ -13,12 +14,12 @@ export default function UserStatistic() {
   const navigate = useNavigate();
 
   const returnToConfigQuiz = () => {
-    navigate('/');
+    navigate(`${AppRoutes.ROOT}`);
   };
 
   return (
     <Container>
-      <TitleOfPage>Quiz Statistic</TitleOfPage>
+      <Title>Quiz Statistic</Title>
       <Box
         sx={{
           display: 'flex',
@@ -67,7 +68,7 @@ export default function UserStatistic() {
           margin: '20px 20px',
         }}
       >
-        <UserButton handleClick={returnToConfigQuiz}>ConfigQuiz</UserButton>
+        <Button handleClick={returnToConfigQuiz}>ConfigQuiz</Button>
       </Box>
     </Container>
   );

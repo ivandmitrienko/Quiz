@@ -1,9 +1,6 @@
 import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import {
-  IQuizConfigState,
-  IState,
-  IStructureOfQuestion,
-} from '../../types/types';
+
+import { IQuizConfigState, IState, IStructureOfQuestion } from '../types/types';
 
 export const createSliceQuestions = createAsyncThunk(
   '@@questions/createQuestions',
@@ -49,8 +46,8 @@ const questionsSlice = createSlice({
     saveStructureTest: (state, action: PayloadAction<IQuizConfigState>) => {
       state.configTest = action.payload;
     },
-    removeStructureAndDataTest: (state) => {
-      return (state = initialState);
+    removeStructureAndDataTest: () => {
+      return initialState;
     },
     changeStartQuestion: (state) => {
       state.configTest.firstQuestion += state.configTest.quantityOfQuestions;

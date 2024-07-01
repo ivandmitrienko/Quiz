@@ -2,15 +2,16 @@ import { useSelector } from 'react-redux';
 
 import { Box, Container, Grid } from '@mui/material';
 
-import UserButton from '../../features/UserButtons/TypeOfButton';
-import { RootState, useAppDispatch } from '../store/store';
-import { configTest } from '../store/selectors';
+import Button from '../../common/Buttons/TypeOfButton';
+import { RootState, useAppDispatch } from '../../store/store';
+import { configTest } from '../../store/selectors';
 import {
   removeStructureAndDataTest,
   restartQuiz,
-} from '../store/QuestionsSlice';
-import { removeCorrentResult } from '../store/ResultSlice';
-import { Item } from '../../assets/utilies/styleForItemGrid';
+} from '../../store/QuestionsSlice';
+import { removeCurrentResult } from '../../store/ResultSlice';
+import { Item } from '../../utilies/styleForItemGrid';
+import { AppRoutes } from '../../enums/enums';
 
 export default function UserResult() {
   const configForTest = useSelector(configTest);
@@ -29,12 +30,12 @@ export default function UserResult() {
 
   const handleRemoveDataAndStructure = () => {
     dispatch(removeStructureAndDataTest());
-    dispatch(removeCorrentResult());
+    dispatch(removeCurrentResult());
   };
 
   const handleRestartData = () => {
     dispatch(restartQuiz());
-    dispatch(removeCorrentResult());
+    dispatch(removeCurrentResult());
   };
 
   return (
@@ -85,12 +86,15 @@ export default function UserResult() {
           margin: '20px 20px',
         }}
       >
-        <UserButton link={'/test'} handleClick={handleRestartData}>
+        <Button link={AppRoutes.INTERROGATION} handleClick={handleRestartData}>
           Restart
-        </UserButton>
-        <UserButton link={'/'} handleClick={handleRemoveDataAndStructure}>
+        </Button>
+        <Button
+          link={AppRoutes.ROOT}
+          handleClick={handleRemoveDataAndStructure}
+        >
           Choose another quiz
-        </UserButton>
+        </Button>
       </Box>
     </Container>
   );

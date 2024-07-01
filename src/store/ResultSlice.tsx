@@ -20,8 +20,8 @@ const resultSlice = createSlice({
     addTimeSpentOnQuestions: (state, action: PayloadAction<number>) => {
       state.time = action.payload;
     },
-    removeCorrentResult: (state) => {
-      return (state = initialState);
+    removeCurrentResult: () => {
+      return initialState;
     },
   },
 });
@@ -29,6 +29,6 @@ const resultSlice = createSlice({
 export const {
   addCorrectAnswer,
   addTimeSpentOnQuestions,
-  removeCorrentResult,
+  removeCurrentResult,
 } = resultSlice.actions;
 export const resultReducer = resultSlice.reducer;

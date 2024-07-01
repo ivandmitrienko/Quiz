@@ -5,7 +5,6 @@ export default function LoadingContent() {
     <Container fixed>
       <Box
         sx={{
-          bgcolor: '#cfe8fc',
           height: '100vh',
           padding: '20px 10px',
           display: 'flex',
