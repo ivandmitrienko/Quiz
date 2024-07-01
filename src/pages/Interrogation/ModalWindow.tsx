@@ -4,9 +4,10 @@ import { Box, Modal } from '@mui/material';
 
 import Button from '../../common/Buttons/TypeOfButton';
 import { IModal } from '../../types/types';
-import { removeCorrentResult } from '../../store/ResultSlice';
+import { removeCurrentResult } from '../../store/ResultSlice';
 import { useAppDispatch } from '../../store/store';
 import { removeStructureAndDataTest } from '../../store/QuestionsSlice';
+import { AppRoutes } from '../../enums/enums';
 
 export default function ModalWindow({ modal, handleClick }: IModal) {
   const dispatch = useAppDispatch();
@@ -27,7 +28,7 @@ export default function ModalWindow({ modal, handleClick }: IModal) {
 
   const clearCurrentResult = () => {
     handleClick();
-    dispatch(removeCorrentResult());
+    dispatch(removeCurrentResult());
     dispatch(removeStructureAndDataTest());
   };
 
@@ -48,7 +49,7 @@ export default function ModalWindow({ modal, handleClick }: IModal) {
               justifyContent: 'space-evenly',
             }}
           >
-            <Button link={'/'} handleClick={clearCurrentResult}>
+            <Button link={AppRoutes.ROOT} handleClick={clearCurrentResult}>
               Confirm
             </Button>
             <Button handleClick={handleClick}>Cancel</Button>

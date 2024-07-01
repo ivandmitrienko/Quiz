@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { statistic } from '../../store/selectors';
 import Button from '../../common/Buttons/Button';
 import { useNavigate } from 'react-router-dom';
+import { AppRoutes } from '../../enums/enums';
 
 export default function UserStatistic() {
   const userStatistic = useSelector(statistic);
@@ -13,7 +14,7 @@ export default function UserStatistic() {
   const navigate = useNavigate();
 
   const returnToConfigQuiz = () => {
-    navigate('/');
+    navigate(`${AppRoutes.ROOT}`);
   };
 
   return (

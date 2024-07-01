@@ -11,6 +11,7 @@ import {
 } from '../../store/QuestionsSlice';
 import { removeCurrentResult } from '../../store/ResultSlice';
 import { Item } from '../../utilies/styleForItemGrid';
+import { AppRoutes } from '../../enums/enums';
 
 export default function UserResult() {
   const configForTest = useSelector(configTest);
@@ -85,10 +86,13 @@ export default function UserResult() {
           margin: '20px 20px',
         }}
       >
-        <Button link={'/test'} handleClick={handleRestartData}>
+        <Button link={AppRoutes.INTERROGATION} handleClick={handleRestartData}>
           Restart
         </Button>
-        <Button link={'/'} handleClick={handleRemoveDataAndStructure}>
+        <Button
+          link={AppRoutes.ROOT}
+          handleClick={handleRemoveDataAndStructure}
+        >
           Choose another quiz
         </Button>
       </Box>

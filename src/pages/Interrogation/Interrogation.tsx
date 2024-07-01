@@ -25,6 +25,7 @@ import {
   addAnswerToStatistic,
   addCorrectAnswerToStatistic,
 } from '../../store/StatisticSlice';
+import { AppRoutes } from '../../enums/enums';
 
 export default function UserTest() {
   const configForTest = useSelector(configTest);
@@ -50,7 +51,7 @@ export default function UserTest() {
     } else {
       setIsTimerActive(false);
       dispatch(addTimeSpentOnQuestions(timeSpentOnQuestions));
-      navigate('/results');
+      navigate(`${AppRoutes.RESULT}`);
     }
   }, [currentQuestionIndex, questionsForTest.length]);
 
@@ -62,7 +63,7 @@ export default function UserTest() {
       }, 1000);
     } else if (totalTime === 0) {
       setIsTimerActive(false);
-      navigate('/results');
+      navigate(`${AppRoutes.RESULT}`);
       dispatch(addTimeSpentOnQuestions(timeSpentOnQuestions));
     }
     return () => clearInterval(timerInterval);
